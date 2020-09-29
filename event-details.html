@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>Jollof - Events</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="font-awesome-4.7.0/css/font-awesome-animation.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/smallerscreen.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
+    <style>
+        .movie-div {
+            background: url(images/event-background.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 230px 0;
+        }
+        .services-wrapper {
+            padding: 50px 0;
+        }
+        .services-wrapper h6 {
+            font-size: 16px;
+        }
+        .recommended-wrapper {
+            margin-bottom: 20px;
+        }
+        .recommended-wrapper > div {
+            padding: 10px;
+        }
+        .btn.btn-info.btn-join {
+            width: 100%;
+            margin-top: 5px;
+        }
+        .search-wrapper input, .search-wrapper select {
+            padding-top: 6px;
+            background: #e0e0e0;
+        }
+        .search-wrapper .row {
+            margin-top: 10px;
+        }
+        .services-wrapper .selection-wrapper .selection-value {
+            width: auto;
+            margin-top: 0;
+        }
+        .recommended-wrapper .btn.btn-info.btn-join {
+            padding: 10px 20px;
+            margin-top: 5px;
+            margin-right: 10px;
+        }
+        .services-wrapper .recommended-wrapper p {
+            margin: 25px 0;
+        }
+        @media screen and (max-width: 768px) {
+            .search-wrapper input,
+            .search-wrapper select,
+            .search-wrapper button {
+                margin-top: 10px;
+            }
+            .recommended-wrapper {
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+<body> 
+    <header> 
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">    
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navb">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cuisine.html">CUISINE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fashion.html">FASHION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lifestyle.html">LIFESTYLE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="scholar.html">SCHOLAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="business.html">BUSINESS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link gift-portal" href="gift.html">GIFT PORTAL</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link gift-portal" href="gift.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>          
+        </nav>
+        <div class="logo-wrapper">
+            <nav class="navbar navbar-expand-md">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid logo" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="movies.html">Movies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="events.html">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="travels.html">Travels</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tour.html">Tourism</a>
+                            </li>
+                            <li class="nav-item cart-item">
+                                <a class="nav-link cart" href="#">
+                                    &emsp;<img src="images/cart.svg" class="img-fluid" alt="logo">
+                                    <div class="cart-number">2</div>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">
+                                    Account
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="d-flex">
+                                        <div>
+                                            <a class="dropdown-item btn btn-info btn-join" href="#">Sign up</a>
+                                        </div>
+                                        <div class="margin-left-5">
+                                            <a class="dropdown-item btn btn-info btn-join btn-signin" href="#">Sign in</a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p><a href="">My Orders</a></p>
+                                    <p><a href="">Message Center <span>(10)</span></a></p>
+                                    <p><a href="">Profile</a></p>
+                                    <p><a href="">Settings</a></p>
+                                    <p><a href="">Logout</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <div class="movie-div"></div>
+            <div class="container">
+                <div class="services-wrapper">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8">
+                            <div>
+                                <h3 class="event-name">LAGOS 2019 Digital Transformation and Innovation Summit</h3>
+                                <h6>by Institute of Enterprise Management and Analytics</h6>
+                                <div class="event-description">
+                                    <h5>Description</h5>
+                                    <div>
+                                        <p class="bold">The Future of Business in the African Continent</p>
+                                        <p>Lagos 2020 DX Summit is dedicated to ensure you think differently of how African businesses are rapidly changing and adapting to the dynamics of Digital Transformation, and how it is reshaping the future global business</p><br>
+                                        <p>It is the largest gathering of digital transformation experts, business leaders and global disruptor focused on African businesses, it is dedicated to provide African businesses opportunity leverage digital transformation initiatives and solutions position their businesses for global competitive advantage. The summit include case study presentations, breakout sessions, panel discussion and technical workshops focused on key strategies, technology and solutions for developing and reaching targeted DX goals. Participants will walk away from the summit with tools and insights to map out their organization’s digital transformation (DX) efforts. Participants will learn how to build a DX IT infrastructure that makes their brand compete globally and empower their employees with fast, organized workflows using top-of-the-line tools using Artificial Intelligence, Internet of Things, Cloud Computing, Machine Learning, Robotics, Automation, Big data analytics and many more.</p>
+                                    </div>
+                                    <div>
+                                        <p class="bold">Topics For Panel Discussion</p>
+                                        <p>Trending Solutions: What are the latest technologies and solutions driving industry related digital transformation efforts especially as it realtes to Africa and global competition</p>
+                                    </div>
+                                    <div>
+                                        <p class="bold">Strategy: How to redesign business architecture, technology delivery models and responsive development to drive innovation, growth and scales.</p>
+                                        <p>Aligning Data Strategies to Drive Digital Transformation: How african companies are adapting their data strategies and initiatives to support their company’s digital transformation strategy.</p>
+                                        <p>Leadership: Partnering with the CEO, CIO and other executives to drive both disruptive and incremental change.</p>
+                                    </div>
+                                    <div>
+                                        <p class="bold">Beakout Sessions -</p>
+                                        <p>There are 4 breakout sessions planned for the summit with discussion topics related to Artificial intelligence, Internet of Things, Machine learning, Platformization, Robotics, inductrial automation, Big data, cloud computing and many more tailored to African organizations and how they can leverage trending technologies and solutions to positions their businesses for competitive global advantage. Question sessions will occur throughout, with case studies shared by various companies in attendance. Business leaders and Dx Experts will be on hand to answer questions and help with your implementationa and strategy efforts</p>
+                                    </div>
+                                    <div>
+                                        <p class="bold">Who Should Attend</p>
+                                        <p>Chief Executive Officers, Chief Marketing Officers, Chief Digital Officers, Chief Information Officers, Executive Vice Presidents, Vice Presidents, Executive Directors, Directors, Senior and Mid lLevel Managers, Business and Operations Managers, Analyst. IT Security Personnel, Academic and Research Personel, Business architechs, Engineers, Government Oficials and Global Heads responsible for managing and Implementing strategies related to enterprise technologies and solutions, business alignments, innovation, new market development and strategies, process optimization and re-engineering, new product development, customer service enhancement, operations management, investment management and many more</p>
+                                    </div>
+                                    <div>
+                                        <p class="bold">Attendee Benefits</p>
+                                        <p>Opportunity for networking with industry experts to share DX experience, insites, latest technologies and solutions for todays enterprise</p>
+                                        <p>Have one-one meeting with DX experts on conversions to move your companies digital transformation efforts and strategies to the next level</p>
+                                        <p>Acess to industry related case studies from leaders and experts</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="checkout-wrapper">
+                                <h6>Lagos Oriental Hotel, 3 Lekki - Epe Expressway, Lagos</h6>
+                                <h6>Thu, September 11, 2020</h6>
+                                <h5>N 3000</h5>
+                                <a href="event-payment.html" class="btn btn-info btn-join">buy ticket</a>
+                            </div>
+                            <div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.715834978345!2d3.4142862147702155!3d6.430539295347519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8ad2432e1871%3A0xe87746c9ec84c8f9!2sAdeola%20Odeku%20St%2C%20Victoria%20Island%2C%20Lagos!5e0!3m2!1sen!2sng!4v1568026836277!5m2!1sen!2sng" width="600" height="450" frameborder="0" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5>Similar Events</h5>
+                    <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-6 mb-20">
+                                <a href="">
+                                    <div class="recommended-wrapper">
+                                        <img src="images/event-image-ten.png" class="img-fluid" alt="">
+                                        <div>
+                                            <p class="bold">LAGOS 2019 Digital Transformation and Innovation Summit</p>
+                                            <div>
+                                                <p>Thu, September 11, 2020 | 10:00 AM
+                                                <br>Lagos Oriental Hotel, 3 Lekki - Epe Expressway, Lagos</p>
+                                            </div>
+                                            <span>N 3000</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 mb-20">
+                                <a href="">
+                                    <div class="recommended-wrapper">
+                                        <img src="images/event-image-eleven.png" class="img-fluid" alt="">
+                                        <div>
+                                            <p class="bold">LAGOS 2019 Digital Transformation and Innovation Summit</p>
+                                            <div>
+                                                <p>Thu, September 11, 2020 | 10:00 AM
+                                                <br>Lagos Oriental Hotel, 3 Lekki - Epe Expressway, Lagos</p>
+                                            </div>
+                                            <span>FREE</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 mb-20">
+                                <a href="">
+                                    <div class="recommended-wrapper">
+                                        <img src="images/event-image-twelve.png" class="img-fluid" alt="">
+                                        <div>
+                                            <p class="bold">LAGOS 2019 Digital Transformation and Innovation Summit</p>
+                                            <div>
+                                                <p>Thu, September 11, 2020 | 10:00 AM
+                                                <br>Lagos Oriental Hotel, 3 Lekki - Epe Expressway, Lagos</p>
+                                            </div>
+                                            <span>FREE</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 mb-20">
+                                <a href="">
+                                    <div class="recommended-wrapper">
+                                        <img src="images/event-image-thirteen.png" class="img-fluid" alt="">
+                                        <div>
+                                            <p class="bold">LAGOS 2019 Digital Transformation and Innovation Summit</p>
+                                            <div>
+                                                <p>Thu, September 11, 2020 | 10:00 AM
+                                                <br>Lagos Oriental Hotel, 3 Lekki - Epe Expressway, Lagos</p>
+                                            </div>
+                                            <span>FREE</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="getintouch">
+            <h3>Get in Touch</h3>
+            <p><span>Send us a message</span><br> Or you can call us on +234555344444</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-8 col-sm-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                            <div>
+                                <h6>Quick Links</h6>
+                                <div>
+                                    <p><a href="cuisine.html">Cuisine</a></p>
+                                    <p><a href="fashion.html">Fashion</a></p>
+                                    <p><a href="lifestyle.html">Life Style</a></p>
+                                    <p><a href="scholar.html">Scholar</a></p>
+                                    <p><a href="business.html">Business</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                            <div>
+                                <h6>Information</h6>
+                                <div>
+                                    <p><a href="privacy.html">Privacy policy</a></p>
+                                    <p><a href="terms.html">Terms & condition</a></p>
+                                    <p><a href="faq.html">FAQ</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                            <div>
+                                <h6>Account</h6>
+                                <div>
+                                    <p><a href="">Advertise on Jollof.com</a></p>
+                                    <p><a href="">Add Your Business</a></p>
+                                    <p><a href="">Merchant Login</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-12 col-12">
+                    <div class="mt-20 pull-right">
+                        <h5>Mobile App</h5>
+                        <div class="d-flex">
+                            <div class="p-2">
+                                <a href=""><img src="images/google-play.png" class="img-fluid" alt="googleplay icon"></a>
+                            </div>
+                            <div class="p-2">
+                                <a href=""><img src="images/app-store.png" class="img-fluid" alt="appstore icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="mt-10">
+                <p class="pull-left">2019 C All Right Reserved, Jollof.com</p>
+                <p class="text-right"><a href="">Refund & Cancellation Policy</a> | <a href="">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

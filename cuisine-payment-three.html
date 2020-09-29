@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>Jollof</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="font-awesome-4.7.0/css/font-awesome-animation.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/smallerscreen.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #E5E5E5;
+        }
+        .movie-div {
+            background: url(images/cuisine-store.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 230px 0;
+        }
+        .services-wrapper {
+            padding: 30px 0 200px 0;
+        }
+        .services-wrapper h6 {
+            font-size: var(--h6--text);
+        }
+        .services-wrapper span {
+            display: inherit;
+            font-size: 13px;
+            color: #F19005;
+        }
+        .checkout-wrapper {
+            background: #FFF;
+            border: none;
+            border-radius: 8px;
+        }
+        .checkout-wrapper p {
+            margin-bottom: 0;
+        }
+        .checkout-wrapper .regular p {
+            margin-bottom: 20px;
+        }
+        .custom-control-label {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header> 
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">    
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navb">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cuisine.html">CUISINE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fashion.html">FASHION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lifestyle.html">LIFESTYLE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="scholar.html">SCHOLAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="business.html">BUSINESS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link gift-portal" href="gift.html">GIFT PORTAL</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link gift-portal" href="gift.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>          
+        </nav>
+        <div class="logo-wrapper">
+            <nav class="navbar navbar-expand-md">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid logo" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav ml-auto">
+                            <li>
+                                <a class="btn btn-info btn-join" href="">Register Restaurant</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Vendors</a>
+                            </li>
+                            <li class="nav-item cart-item">
+                                <a class="nav-link cart" href="#">
+                                    &emsp;<img src="images/cart.svg" class="img-fluid" alt="logo">
+                                    <div class="cart-number">2</div>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">
+                                    Account
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="d-flex">
+                                        <div>
+                                            <a class="dropdown-item btn btn-info btn-join" href="#">Sign up</a>
+                                        </div>
+                                        <div class="margin-left-5">
+                                            <a class="dropdown-item btn btn-info btn-join btn-signin" href="#">Sign in</a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p><a href="">My Orders</a></p>
+                                    <p><a href="">Message Center <span>(10)</span></a></p>
+                                    <p><a href="">Profile</a></p>
+                                    <p><a href="">Settings</a></p>
+                                    <p><a href="">Logout</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <div class="movie-div"></div>
+            <div class="container">
+                <div class="services-wrapper">
+                    <h3>Sanni Grills</h3>
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8">
+                            <div>
+                                <div class="delivery-wrapper">
+                                    <h5>Delivery Details</h5>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" class="custom-control-input" id="customRadioOne" name="cusRadio" checked>
+                                                <label class="custom-control-label" for="customRadioOne">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <p>Floyd Warren&emsp;</p>
+                                                        </div>
+                                                        <div>
+                                                            <p>+234 816 295 0129</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <p>6938 Spring St Great Falls, Maryland, Lagos Nigeria</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="default">Default</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <a href=""><span><i class="fa fa-plus"></i> Add new address&emsp;</span></a>
+                                                        </div>
+                                                        <div>
+                                                            <a href=""><span>Select another address</span></a>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="delivery-wrapper">
+                                    <h5>Other Delivery Details</h5>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" class="custom-control-input" id="customRadioTwo" name="cusRadio">
+                                                <label class="custom-control-label" for="customRadioTwo">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <p>Lade Ibidun&emsp;</p>
+                                                        </div>
+                                                        <div>
+                                                            <p>+234 816 295 0129</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <p>6874 Spring St Great Falls, Maryland, Lagos Nigeria</p>
+                                                        </div>
+                                                    </div>
+                                                    <a href=""><span>Edit</span></a>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" class="custom-control-input" id="customRadioThree" name="cusRadio">
+                                                <label class="custom-control-label" for="customRadioThree">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <p>Calvin Bell&emsp;</p>
+                                                        </div>
+                                                        <div>
+                                                            <p>+234 802 190 5114</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <p>3772 Photinia Ave Omaha, OIuwajoni, Lagos Nigeria</p>
+                                                        </div>
+                                                    </div>
+                                                    <a href=""><span>Edit &emsp;</span></a>
+                                                    <a href=""><span>Set as default</span></a>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href=""><span><i class="fa fa-plus"></i> Add new address</span></a>
+                                </div>
+                                <div class="delivery-wrapper">
+                                    <h5>Order Note (Optional)</h5>
+                                    <div class="row">
+                                        <div class="col-lg-7 col-md-6">
+                                            <div>
+                                                <textarea class="form-control" rows="5"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 col-md-6">
+                                            <div>
+                                                <p class="bold">Note</p>
+                                                <p>If there is any additional information you’d like us to follow please drop us a note and it would be taken care of.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="checkout-wrapper">
+                                <h5 class="mb-40">Order Summary</h5>
+                                <p class="bold" style="margin-bottom: 0;">Fried rice</p>
+                                <div>
+                                    <div class="regular">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <div>
+                                                    <p class="bold">1 Regular pack</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="pull-right">
+                                                    <p class="bold">₦700.00</p>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <div>
+                                                    <p class="bold">Subtotal</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="pull-right">
+                                                    <p class="bold">₦700.00</p>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <div>
+                                                    <p class="bold">Delivery Fee</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="pull-right">
+                                                    <p class="bold">₦150.00</p>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <div>
+                                                    <p class="bold">Container charges</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="pull-right">
+                                                    <p class="bold">₦100.00</p>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    
+                                    <div class="total-amount">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <div>
+                                                    <h6 class="bold">Total</h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="pull-right">
+                                                    <h6 class="bold">N 950.00</h6>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div>
+                                        <a href="cuisine-payment.html" class="btn btn-info btn-join" id="proceed">make payment</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="getintouch">
+            <h3>Get in Touch</h3>
+            <p><span>Send us a message</span><br> Or you can call us on +234555344444</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-8 col-sm-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                            <div>
+                                <h6>Quick Links</h6>
+                                <div>
+                                    <p><a href="cuisine.html">Cuisine</a></p>
+                                    <p><a href="fashion.html">Fashion</a></p>
+                                    <p><a href="lifestyle.html">Life Style</a></p>
+                                    <p><a href="scholar.html">Scholar</a></p>
+                                    <p><a href="business.html">Business</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                            <div>
+                                <h6>Information</h6>
+                                <div>
+                                    <p><a href="privacy.html">Privacy policy</a></p>
+                                    <p><a href="terms.html">Terms & condition</a></p>
+                                    <p><a href="faq.html">FAQ</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                            <div>
+                                <h6>Account</h6>
+                                <div>
+                                    <p><a href="">Advertise on Jollof.com</a></p>
+                                    <p><a href="">Add Your Business</a></p>
+                                    <p><a href="">Merchant Login</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-12 col-12">
+                    <div class="mt-20 pull-right">
+                        <h5>Mobile App</h5>
+                        <div class="d-flex">
+                            <div class="p-2">
+                                <a href=""><img src="images/google-play.png" class="img-fluid" alt="googleplay icon"></a>
+                            </div>
+                            <div class="p-2">
+                                <a href=""><img src="images/app-store.png" class="img-fluid" alt="appstore icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="mt-10">
+                <p class="pull-left">2019 C All Right Reserved, Jollof.com</p>
+                <p class="text-right"><a href="">Refund & Cancellation Policy</a> | <a href="">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/movie-ticket.js"></script>
+</body>
+</html>

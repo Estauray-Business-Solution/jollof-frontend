@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>Jollof</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="font-awesome-4.7.0/css/font-awesome-animation.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/smallerscreen.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #f7f7f7;
+        } 
+        .navbar, .nav-link {
+            padding: 0.5rem 1rem;
+        }
+        .logo-wrapper.shopping-categories .navbar .navbar-nav .nav-link {
+            font-size: 14px;
+            padding-left: 0;
+            padding-right: 30px;
+        }
+        .btn.btn-info.btn-join {
+            margin-top: 7px;
+            width: 100%;
+        }
+        .services-wrapper h4 {
+            color: #2b2b2b;
+        }
+        .services-wrapper .pull-right a {
+            color: #eb6323;
+            margin-top: 47px;
+            font-weight: 400;
+        }
+        .recommended-wrapper {
+            background: #FFFFFF;
+            box-shadow: 0px 2px 17px rgba(44, 51, 58, 0.1);
+            border: none;
+        }
+        .recommended-wrapper > div {
+            padding: 20px 10px 10px 10px;
+        }
+        .services-wrapper .cuisine-div h6 {
+            font-size: 23px;
+            margin-top: 10px;
+        }
+        .services-wrapper .recommended-wrapper h6 {
+            padding-top: 0;
+        }
+        .services-wrapper .recommended-wrapper p {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .services-wrapper .recommended-wrapper span {
+            font-size: 12px;
+            color: #050505;
+            padding-bottom: 10px;
+        }
+        .services-wrapper .single-product:hover img {
+          opacity: 0.3;
+        }
+
+        .services-wrapper .single-product:hover .productdetails-wrapper {
+          opacity: 1;
+        }
+        .modal {
+            top: 0;
+            max-height: initial;
+            overflow-y: auto;
+        }
+        .modal-body {
+            height: auto;
+            overflow-y: auto;
+        }
+        .gallery-wrapper {
+            margin-bottom: 15px;
+        }
+        .product-wrapper .input-group {
+            width: 55%;
+        }
+        .modal-dialog {
+            max-width: 700px;
+        }
+        .btn.btn-info.btn-join.quickview-btn {
+            color: #eb6323;
+        }
+
+        @media screen and (max-width: 768px) {
+            .recommended-wrapper img.shopping {
+                width: auto;
+            }
+        }
+        @media screen and (max-width: 450px) {
+            .recommended-wrapper .d-flex {
+                display: block!important;
+            }
+            .services-wrapper h4.text-left {
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 780px) and (max-width: 1000px) {
+            .recommended-wrapper .d-flex {
+                display: block!important;
+            }
+        }
+    </style>
+</head>
+<body> 
+    <header> 
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">    
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navb">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cuisine.html">CUISINE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="fashion.html">FASHION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lifestyle.html">LIFESTYLE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="scholar.html">SCHOLAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="business.html">BUSINESS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link gift-portal" href="gift.html">GIFT PORTAL</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link gift-portal" href="gift.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>          
+        </nav>
+
+        <!-- for larger screens -->
+        <div class="logo-wrapper hidden-sm">
+            <nav class="navbar navbar-expand-md">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid logo" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar" style="margin-right: -15px;">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="">All Stores</a>
+                            </li>
+                            <li class="nav-item cart-item">
+                                <a class="nav-link cart" href="#">
+                                    &emsp;<img src="images/cart.svg" class="img-fluid" alt="logo">
+                                    <div class="cart-number">2</div>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">
+                                    Account
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="d-flex">
+                                        <div>
+                                            <a class="dropdown-item btn btn-info btn-join" href="#">Sign up</a>
+                                        </div>
+                                        <div class="margin-left-5">
+                                            <a class="dropdown-item btn btn-info btn-join btn-signin" href="#">Sign in</a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p><a href="">My Orders</a></p>
+                                    <p><a href="">Message Center <span>(10)</span></a></p>
+                                    <p><a href="">Profile</a></p>
+                                    <p><a href="">Settings</a></p>
+                                    <p><a href="">Logout</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+            </nav>
+        </div>
+
+        <!-- for smaller screens -->
+        <div class="logo-wrapper hidden-lg">
+            <nav class="navbar navbar-expand-md">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid logo" alt="logo"></a>
+
+                    <ul class="navbar-nav ml-auto cart-nav-mobile">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">
+                                <img src="images/user.svg" class="img-fluid" alt="logo">
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="signin.html">Login</a>
+                                <a class="dropdown-item" href="signup.html">Signup</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="cart">
+                                <img src="images/cart.svg" class="img-fluid" alt="logo">
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Discounts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Quick Sale</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">All Stores</a>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+            </nav>
+        </div>
+        
+        <div class="logo-wrapper shopping-categories" style="background: #FAFAFA;">
+            <nav class="navbar navbar-expand-md">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#categoriesNavbar">
+                        <i class="fa fa-bars"></i>  &nbsp;<span style="font-size: 15px;">CATEGORIES</span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="categoriesNavbar">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">
+                                    WOMEN'S CLOTHING
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="row">
+                                        <div class="col-sm-6 mt-10">
+                                            <div>
+                                                <p><a href="tops.html"><strong>Tops</strong></a></p>
+                                                <a class="dropdown-item" href="dresses.html">Dresses</a>
+                                                <a class="dropdown-item" href="#">Skirts</a>
+                                                <a class="dropdown-item" href="#">Blouses</a>
+                                                <a class="dropdown-item" href="#">Suits</a>
+                                                <a class="dropdown-item" href="#">Shirts</a>
+                                                <a class="dropdown-item" href="#">Rompers</a>
+                                            </div>
+                                        </div> 
+                                        <div class="col-sm-6 mt-10">
+                                            <div>
+                                                <p><a href="bottoms.html"><strong>Bottoms</strong></a></p>
+                                                <a class="dropdown-item" href="jeans.html">Jeans</a>
+                                                <a class="dropdown-item" href="#">Shorts</a>
+                                                <a class="dropdown-item" href="#">Skirts</a>
+                                                <a class="dropdown-item" href="#">Pants</a>
+                                                <a class="dropdown-item" href="#">Leggings</a>
+                                                <a class="dropdown-item" href="#">Underwears</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 mt-10">
+                                            <p><a href="wears.html"><strong>Wears</strong></a></p>
+                                            <a class="dropdown-item" href="jackets.html">Jackets</a>
+                                            <a class="dropdown-item" href="#">Pijamas</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">
+                                    MEN'S CLOTHING
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="row">
+                                        <div class="col-sm-6 mt-10">
+                                            <div>
+                                                <p><a href=""><strong>Clothings</strong></a></p>
+                                                <a class="dropdown-item" href="#">Shirts</a>
+                                                <a class="dropdown-item" href="#">Tshirts</a>
+                                                <a class="dropdown-item" href="#">Polo Shirts</a>
+                                                <a class="dropdown-item" href="#">Singlets</a>
+                                                <a class="dropdown-item" href="#">Suits</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 mt-10">
+                                            <div>
+                                                <p><a href=""><strong>Bottoms</strong></a></p>
+                                                <a class="dropdown-item" href="#">Trousers</a>
+                                                <a class="dropdown-item" href="#">Underwears</a>
+                                                <a class="dropdown-item" href="#">Shorts</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="cart" data-toggle="dropdown">WATCHES</a>
+                                <div class="dropdown-menu">
+                                    <div class="row">
+                                        <div class="col-sm-6 mt-10">
+                                            <div>
+                                                <p><a href=""><strong>Women Watches</strong></a></p>
+                                                <a class="dropdown-item" href="#">Bracelet Watches</a>
+                                                <a class="dropdown-item" href="#">Leather Watches</a>
+                                                <a class="dropdown-item" href="#">Rubber Watches</a>
+                                                <a class="dropdown-item" href="#">Digital Watches</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 mt-10">
+                                            <div>
+                                                <p><a href=""><strong>Men Watches</strong></a></p>
+                                                <a class="dropdown-item" href="#">Bracelet Watches</a>
+                                                <a class="dropdown-item" href="#">Leather Watches</a>
+                                                <a class="dropdown-item" href="#">Rubber Watches</a>
+                                                <a class="dropdown-item" href="#">Digital Watches</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="cart" data-toggle="dropdown">ACCESSORIES</a>
+                                <div class="dropdown-menu">
+                                    <div>
+                                        <div class="mt-10">
+                                            <p><a href=""><strong>Women Accessories</strong></a></p>
+                                            <a class="dropdown-item" href="#">Hats & Caps</a>
+                                            <a class="dropdown-item" href="#">Sunglasses & Eyewear Accessories</a>
+                                            <a class="dropdown-item" href="#">Wallets, Card Cases & Money Organizers</a>
+                                            <a class="dropdown-item" href="#">Belts</a>
+                                            <a class="dropdown-item" href="#">Handbag Accessories</a>
+                                            <a class="dropdown-item" href="#">Special Occasion Accessories</a>
+                                            <a class="dropdown-item" href="#">Hair Accessories</a>
+                                        </div>
+                                        <div class="mt-10">
+                                            <p><a href=""><strong>Men Accessories</strong></a></p>
+                                            <a class="dropdown-item" href="#">Hats & Caps</a>
+                                            <a class="dropdown-item" href="#">Sunglasses & Eyewear Accessories</a>
+                                            <a class="dropdown-item" href="#">Neckties</a>
+                                            <a class="dropdown-item" href="#">Wallets, Card Cases & Money Organizers</a>
+                                            <a class="dropdown-item" href="#">Keyrings & Keychains</a>
+                                            <a class="dropdown-item" href="#">Belts</a>
+                                            <a class="dropdown-item" href="#">Cuff Links, Shirt Studs & Tie Clips</a>
+                                            <a class="dropdown-item" href="#">Scarves</a>
+                                            <a class="dropdown-item" href="#">Bow Ties & Cummerbunds</a>
+                                            <a class="dropdown-item" href="#">Earmuffs</a>
+                                            <a class="dropdown-item" href="#">Suspenders</a>
+                                            <a class="dropdown-item" href="#">Socks</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="cart" data-toggle="dropdown">JEWELRY</a>
+                                <div class="dropdown-menu">
+                                    <div class="row">
+                                        <div class="col-sm-6 mt-10">
+                                            <div>
+                                                <p><a href=""><strong>Women Jewelry</strong></a></p>
+                                                <a class="dropdown-item" href="#">Fashion</a>
+                                                <a class="dropdown-item" href="#">Wedding & <br>Engagement</a>
+                                                <a class="dropdown-item" href="#">Fine</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 mt-10">
+                                            <div>
+                                                <p><a href=""><strong>Men Jewelry</strong></a></p>
+                                                <a class="dropdown-item" href="#">Necklaces</a>
+                                                <a class="dropdown-item" href="#">Bracelets</a>
+                                                <a class="dropdown-item" href="#">Rings</a>
+                                                <a class="dropdown-item" href="#">Wedding Rings</a>
+                                                <a class="dropdown-item" href="#">Earrings</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="cart" data-toggle="dropdown">SHOES</a>
+                                <div class="dropdown-menu">
+                                    <div class="row">
+                                        <div class="col-sm-6 mt-10">
+                                            <div>
+                                                <p><a href=""><strong>Women shoes</strong></a></p>
+                                                <a class="dropdown-item" href="#">Sandals</a>
+                                                <a class="dropdown-item" href="#">Fashion Sneakers</a>
+                                                <a class="dropdown-item" href="#">Flats</a>
+                                                <a class="dropdown-item" href="#">Boots</a>
+                                                <a class="dropdown-item" href="#">Pumps</a>
+                                                <a class="dropdown-item" href="#">Slippers</a>
+                                                <a class="dropdown-item" href="#">Sports Shoes</a>
+                                                <a class="dropdown-item" href="#">Heels</a>
+                                                <a class="dropdown-item" href="#">Athletic</a>
+                                                <a class="dropdown-item" href="#">Wedge</a>
+                                                <a class="dropdown-item" href="#">Sandals</a>
+                                                <a class="dropdown-item" href="#">Stiletto</a>
+                                                <a class="dropdown-item" href="#">Outdoor</a>
+                                                <a class="dropdown-item" href="#">Mid-calf boots</a>
+                                                <a class="dropdown-item" href="#">Wellies</a>
+                                                <a class="dropdown-item" href="#">Petite Sizes</a>
+                                                <a class="dropdown-item" href="#">Mules & Clogs</a>
+                                                <a class="dropdown-item" href="#">Loafers & Slip-Ons</a>
+                                                <a class="dropdown-item" href="#">Casual Boots</a>
+                                                <a class="dropdown-item" href="#">Sneakers and Canvas</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 mt-10">
+                                            <div>
+                                                <p><a href=""><strong>Men shoes</strong></a></p>
+                                                <a class="dropdown-item" href="#">Fashion Sneakers</a>
+                                                <a class="dropdown-item" href="#">Loafers & Slip-Ons</a>
+                                                <a class="dropdown-item" href="#">Sandals</a>
+                                                <a class="dropdown-item" href="#">Outdoor</a>
+                                                <a class="dropdown-item" href="#">Slippers</a>
+                                                <a class="dropdown-item" href="#">Formal Shoes</a>
+                                                <a class="dropdown-item" href="#">Athletic</a>
+                                                <a class="dropdown-item" href="#">Boots</a>
+                                                <a class="dropdown-item" href="#">Casual</a>
+                                                <a class="dropdown-item" href="#">Espadrilles</a>
+                                                <a class="dropdown-item" href="#">Oxfords</a>
+                                                <a class="dropdown-item" href="#">Mules & Clogs</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="cart" data-toggle="dropdown">BAGS</a>
+                                <div class="dropdown-menu">
+                                    <div class="row">
+                                        <div class="col-sm-6 mt-10">
+                                            <div>
+                                                <p><a href=""><strong>Women Bags</strong></a></p>
+                                                <a class="dropdown-item" href="#">Cross-Body Bags</a>
+                                                <a class="dropdown-item" href="#">Clutches</a>
+                                                <a class="dropdown-item" href="#">Shoulder Bags</a>
+                                                <a class="dropdown-item" href="#">Top-Handle Bags</a>
+                                                <a class="dropdown-item" href="#">Handbags</a>
+                                                <a class="dropdown-item" href="#">Purses</a>
+                                                <a class="dropdown-item" href="#">Backpack Bags</a>
+                                                <a class="dropdown-item" href="#">Wristlets</a>
+                                                <a class="dropdown-item" href="#">Waist Bags</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 mt-10">
+                                            <div>
+                                                <p><strong>Men Bags</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="cart" data-toggle="dropdown">KIDS FASHION</a>
+                                <div class="dropdown-menu">
+                                    <div>
+                                        <div class="mt-10">
+                                            <p><a href=""><strong>Boy’s Clothing</strong></a></p>
+                                            <a class="dropdown-item" href="#">Pants</a>
+                                            <a class="dropdown-item" href="#">Tops & Tees</a>
+                                            <a class="dropdown-item" href="#">Socks</a>
+                                            <a class="dropdown-item" href="#">Suits & Sport Coats</a>
+                                            <a class="dropdown-item" href="#">Jeans</a>
+                                            <a class="dropdown-item" href="#">Sleepwear & Robes</a>
+                                            <a class="dropdown-item" href="#">Underwear</a>
+                                            <a class="dropdown-item" href="#">Shorts</a>
+                                            <a class="dropdown-item" href="#">Jackets & Coats</a>
+                                            <a class="dropdown-item" href="#">Fashion Hoodies & Sweatshirts</a>      
+                                        </div>
+                                        <div class="mt-10">
+                                            <p><a href=""><strong>Girl’s Clothing</strong></a></p>
+                                            <a class="dropdown-item" href="#">Dresses</a>
+                                            <a class="dropdown-item" href="#">Tops & Tees</a>
+                                            <a class="dropdown-item" href="#">Underwear</a>
+                                            <a class="dropdown-item" href="#">Jumpsuits & Rompers</a>
+                                            <a class="dropdown-item" href="#">Jeans</a>
+                                            <a class="dropdown-item" href="#">Swim</a>
+                                            <a class="dropdown-item" href="#">Leggings</a>
+                                            <a class="dropdown-item" href="#">Skirts, Scooters & Skorts</a>
+                                            <a class="dropdown-item" href="#">Sleepwear & Robes</a>
+                                            <a class="dropdown-item" href="#">Jackets & Coats</a>
+                                            <a class="dropdown-item" href="#">Fashion Hoodies & Sweatshirts</a>
+                                            <a class="dropdown-item" href="#">Shorts</a>
+                                            <a class="dropdown-item" href="#">Sweaters</a>
+                                            <a class="dropdown-item" href="#">Socks & Tights</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 mt-10">
+                                            <div>
+                                                <p><a href=""><strong>Boy’s Shoes</strong></a></p>
+                                                <a class="dropdown-item" href="#">Sneakers</a>
+                                                <a class="dropdown-item" href="#">Sandals</a>
+                                                <a class="dropdown-item" href="#">Boots</a>
+                                                <a class="dropdown-item" href="#">Athletic</a>
+                                                <a class="dropdown-item" href="#">Slippers</a>
+                                                <a class="dropdown-item" href="#">Clogs & Mules</a>
+                                                <a class="dropdown-item" href="#">Oxfords</a>
+                                                <a class="dropdown-item" href="#">School Shoes</a>
+                                                <a class="dropdown-item" href="#">Loafers</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 mt-10">
+                                            <div>
+                                                <p><a href=""><strong>Girl’s Shoes</strong></a></p>
+                                                <a class="dropdown-item" href="#">Sneakers</a>
+                                                <a class="dropdown-item" href="#">Sandals</a>
+                                                <a class="dropdown-item" href="#">Boots</a>
+                                                <a class="dropdown-item" href="#">Athletic</a>
+                                                <a class="dropdown-item" href="#">Slippers</a>
+                                                <a class="dropdown-item" href="#">Clogs & Mules</a>
+                                                <a class="dropdown-item" href="#">Flats</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 mt-10">
+                                            <div>
+                                                <p><a href=""><strong>Boy’s Accessories</strong></a></p>
+                                                <a class="dropdown-item" href="#">Hats & Caps</a>
+                                                <a class="dropdown-item" href="#">Sunglasses</a>
+                                                <a class="dropdown-item" href="#">Belts</a>
+                                                <a class="dropdown-item" href="#">Suspenders</a>
+                                                <a class="dropdown-item" href="#">Cold Weather</a>
+                                                <a class="dropdown-item" href="#">Neckties</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 mt-10">
+                                            <div>
+                                                <p><a href=""><strong>Girl’s Accessories</strong></a></p>
+                                                <a class="dropdown-item" href="#">Hats & Caps</a>
+                                                <a class="dropdown-item" href="#">Sunglasses</a>
+                                                <a class="dropdown-item" href="#">Belts</a>
+                                                <a class="dropdown-item" href="#">Athletic</a>
+                                                <a class="dropdown-item" href="#">Cold Weather</a>
+                                                <a class="dropdown-item" href="#">Bags</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="services-wrapper">
+                <div class="container">
+                    <div>
+                        <div class="d-flex">
+                            <div>
+                                <h4 class="text-left">New Arrivals</h4>
+                            </div>
+                            <div id="fashion-search" style="margin-left: 20px; margin-top: 15px;">
+                                <div class="form-group" style="position: relative;">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <i class="fa fa-search search-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="row mt-30">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                                <a href="fashion-product.html">
+                                    <div>
+                                        <img src="images/product-six.png" class="img-fluid" alt="">
+                                        <div>
+                                            <p style="margin-bottom: 0;">Aso Oke Branded Line</p>
+                                            <p class="bold">N23500.00</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                                <a href="fashion-product.html">
+                                    <div>
+                                        <img src="images/product-six.png" class="img-fluid" alt="">
+                                        <div>
+                                            <p style="margin-bottom: 0;">Aso Oke Branded Line</p>
+                                            <p class="bold">N23500.00</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                                <a href="fashion-product.html">
+                                    <div>
+                                        <img src="images/product-seven.png" class="img-fluid" alt="">
+                                        <div>
+                                            <p style="margin-bottom: 0;">Aso Oke Branded Line</p>
+                                            <p class="bold">N23500.00</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                                <a href="fashion-product.html">
+                                    <div>
+                                        <img src="images/product-seven.png" class="img-fluid" alt="">
+                                        <div>
+                                            <p style="margin-bottom: 0;">Aso Oke Branded Line</p>
+                                            <p class="bold">N23500.00</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row mt-30">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                                <a href="fashion-product.html">
+                                    <div>
+                                        <img src="images/product-six.png" class="img-fluid" alt="">
+                                        <div>
+                                            <p style="margin-bottom: 0;">Aso Oke Branded Line</p>
+                                            <p class="bold">N23500.00</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                                <a href="fashion-product.html">
+                                    <div>
+                                        <img src="images/product-six.png" class="img-fluid" alt="">
+                                        <div>
+                                            <p style="margin-bottom: 0;">Aso Oke Branded Line</p>
+                                            <p class="bold">N23500.00</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                                <a href="fashion-product.html">
+                                    <div>
+                                        <img src="images/product-seven.png" class="img-fluid" alt="">
+                                        <div>
+                                            <p style="margin-bottom: 0;">Aso Oke Branded Line</p>
+                                            <p class="bold">N23500.00</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                                <a href="fashion-product.html">
+                                    <div>
+                                        <img src="images/product-seven.png" class="img-fluid" alt="">
+                                        <div>
+                                            <p style="margin-bottom: 0;">Aso Oke Branded Line</p>
+                                            <p class="bold">N23500.00</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="getintouch">
+            <h3>Get in Touch</h3>
+            <p><span>Send us a message</span><br> Or you can call us on +234555344444</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-8 col-sm-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                            <div>
+                                <h6>Quick Links</h6>
+                                <div>
+                                    <p><a href="cuisine.html">Cuisine</a></p>
+                                    <p><a href="fashion.html">Fashion</a></p>
+                                    <p><a href="lifestyle.html">Life Style</a></p>
+                                    <p><a href="scholar.html">Scholar</a></p>
+                                    <p><a href="business.html">Business</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                            <div>
+                                <h6>Information</h6>
+                                <div>
+                                    <p><a href="privacy.html">Privacy policy</a></p>
+                                    <p><a href="terms.html">Terms & condition</a></p>
+                                    <p><a href="faq.html">FAQ</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                            <div>
+                                <h6>Account</h6>
+                                <div>
+                                    <p><a href="">Advertise on Jollof.com</a></p>
+                                    <p><a href="">Add Your Business</a></p>
+                                    <p><a href="">Merchant Login</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-12 col-12">
+                    <div class="mt-20 pull-right">
+                        <h5>Mobile App</h5>
+                        <div class="d-flex">
+                            <div class="p-2">
+                                <a href=""><img src="images/google-play.png" class="img-fluid" alt="googleplay icon"></a>
+                            </div>
+                            <div class="p-2">
+                                <a href=""><img src="images/app-store.png" class="img-fluid" alt="appstore icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="mt-10">
+                <p class="pull-left">2019 C All Right Reserved, Jollof.com</p>
+                <p class="text-right"><a href="">Refund & Cancellation Policy</a> | <a href="">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

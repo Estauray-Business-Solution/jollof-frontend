@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>Jollof</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="font-awesome-4.7.0/css/font-awesome-animation.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/smallerscreen.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
+    <style>
+        .movie-div {
+            background: linear-gradient(rgba(44, 51, 58, 0.8), rgba(44, 51, 58, 0.8)), url(images/cuisine-store.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 150px 0 20px 0;
+            border-bottom: 2px solid #F19005;
+        }
+        .btn.btn-info.btn-facebook,
+        .btn.btn-info.btn-google {
+            padding: 10px 40px;
+            padding-top: 7px;
+            border-radius: 0;
+            font-size: 18px;
+            border: 0;
+        }
+        .btn.btn-info.btn-google {
+            background: #b22823;
+        }
+        .btn.btn-info.btn-facebook {
+            background: #3460ad;
+        }
+        .grills-wrapper h4,
+        .grills-wrapper p,
+        .grills-wrapper h6 {
+            color: #FFF;
+            margin-bottom: 0;
+        }
+        .grills-wrapper h6 {
+            font-size: var(--h6--text);
+            margin-top: -7px;
+        }
+        .services-wrapper {
+            padding-top: 40px;
+            padding-bottom: 120px;
+        }
+        .services-wrapper span {
+            text-transform: uppercase;
+            color: #F14040;
+        }
+        .recommended-wrapper > div {
+            padding: 0;
+        }
+        .checkout-wrapper p {
+            margin-bottom: 0;
+        }
+        .checkout-wrapper .regular p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body style="background: #E5E5E5;">
+    <header> 
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">    
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navb">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="cuisine.html">CUISINE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fashion.html">FASHION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lifestyle.html">LIFESTYLE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="scholar.html">SCHOLAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="business.html">BUSINESS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link gift-portal" href="gift.html">GIFT PORTAL</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link gift-portal" href="gift.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>          
+        </nav>
+        <div class="logo-wrapper">
+            <nav class="navbar navbar-expand-md">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid logo" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav ml-auto">
+                            <li>
+                                <a class="btn btn-info btn-join" href="">Register Restaurant</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Vendors</a>
+                            </li>
+                            <li class="nav-item cart-item">
+                                <a class="nav-link cart" href="#">
+                                    &emsp;<img src="images/cart.svg" class="img-fluid" alt="logo">
+                                    <div class="cart-number">2</div>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">
+                                    Account
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="d-flex">
+                                        <div>
+                                            <a class="dropdown-item btn btn-info btn-join" href="#">Sign up</a>
+                                        </div>
+                                        <div class="margin-left-5">
+                                            <a class="dropdown-item btn btn-info btn-join btn-signin" href="#">Sign in</a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p><a href="">My Orders</a></p>
+                                    <p><a href="">Message Center <span>(10)</span></a></p>
+                                    <p><a href="">Profile</a></p>
+                                    <p><a href="">Settings</a></p>
+                                    <p><a href="">Logout</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <div class="movie-div">
+                <div class="grills-wrapper">
+                    <div class="container">
+                        <div class="d-flex">
+                            <div class="p-2">
+                                <h4>Sanni Grills</h4>
+                            </div>
+                            <div class="p-2">
+                                <span class="open">OPEN</span>
+                            </div>
+                        </div>
+                        <h6>Lekki, Phase 1. Lagos</h6>
+                        <div class="store-stars">
+                            <i class="fa fa-star" style="color: #6FCF97;"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Estimated Delivery Time: 30 -40 Mins</p>
+                        <p>MinimumOrder: N 0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="services-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <div class="cuisine-store-details">
+                                <div class="store-name">
+                                    <h6>Categories</h6>
+                                    <div>
+                                        <p><a href="#swallow">Swallow</a></p>
+                                        <p><a href="#meat">Meat</a></p>
+                                        <p><a href="#soup">Soups</a></p>
+                                        <p><a href="#rice">Rice</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-5">
+                            <div style="background: #fff;" id="food-lists">
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#menu">Menu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#customer-reviews">Review (2)</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#bookatable">Book a Table</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#restaurant-info">Restaurant Info</a>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane container active" id="menu">
+                                        <div>
+                                            <div class="form-group food-search">
+                                                <input type="text" class="form-control" placeholder="Search food item">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                        </div>
+                                        <div class="mainmenu-wrapper">
+                                            <div div id="swallow">
+                                                <h6 class="food-name">Swallow</h6>       
+                                                <ul>
+                                                    <li class="1" data-menu="Jollof Rice" data-price="700">
+                                                        <div class="row">
+                                                            <div class="col-lg-8 col-md-12">
+                                                                <div class="d-flex">
+                                                                    <div class="img-wrapper">
+                                                                        <img src="images/cuisine-pack-one.png" class="img-fluid" alt="">
+                                                                    </div>   
+                                                                    <div class="event-details">
+                                                                        <h6>Jollof Rice</h6>
+                                                                        <p style="color: #C0C0C0; margin-top: -10px;">This comes with a plate and meat only </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-12">
+                                                                <div class="d-flex margin-top-20 pull-right">
+                                                                    <p class="price">₦700.00</p>
+                                                                    <button class="order" data-toggle="modal" data-target="#moreModal">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                    </li>
+                                                    <li class="1" data-menu="White Rice" data-price="500">
+                                                        <div class="row">
+                                                            <div class="col-lg-8 col-md-12">
+                                                                <div class="d-flex">
+                                                                    <div class="img-wrapper">
+                                                                        <img src="images/cuisine-pack-one.png" class="img-fluid" alt="">
+                                                                    </div>   
+                                                                    <div class="event-details">
+                                                                        <h6>White Rice</h6>
+                                                                        <p style="color: #C0C0C0; margin-top: -10px;">This comes with a plate and meat only </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-12">
+                                                                <div class="d-flex margin-top-20 pull-right">
+                                                                    <p class="price">₦500.00</p>
+                                                                    <button class="order">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                    </li>
+                                                    <li class="1" data-menu="Ofada Rice" data-price="800">
+                                                        <div class="row">
+                                                            <div class="col-lg-8 col-md-12">
+                                                                <div class="d-flex">
+                                                                    <div class="img-wrapper">
+                                                                        <img src="images/cuisine-pack-one.png" class="img-fluid" alt="">
+                                                                    </div>   
+                                                                    <div class="event-details">
+                                                                        <h6>Ofada Rice</h6>
+                                                                        <p style="color: #C0C0C0; margin-top: -10px;">This comes with a plate and meat only </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-12">
+                                                                <div class="d-flex margin-top-20 pull-right">
+                                                                    <p class="price">₦800.00</p>
+                                                                    <button class="order">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div id="meat">
+                                                <h6 class="food-name">Meat</h6>       
+                                                <ul>
+                                                    <li class="1" data-menu="Fried Meat" data-price="1000">
+                                                        <div class="row">
+                                                            <div class="col-lg-8 col-md-12">
+                                                                <div class="d-flex">
+                                                                    <div class="img-wrapper">
+                                                                        <img src="images/cuisine-pack-one.png" class="img-fluid" alt="">
+                                                                    </div>   
+                                                                    <div class="event-details">
+                                                                        <h6>Fried Meat</h6>
+                                                                        <p style="color: #C0C0C0; margin-top: -10px;">This comes with a plate and meat only </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-12">
+                                                                <div class="d-flex margin-top-20 pull-right">
+                                                                    <p class="price">₦1000.00</p>
+                                                                    <button class="order">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                    </li>
+                                                    <li class="1" data-menu="Chicken" data-price="1500">
+                                                        <div class="row">
+                                                            <div class="col-lg-8 col-md-12">
+                                                                <div class="d-flex">
+                                                                    <div class="img-wrapper">
+                                                                        <img src="images/cuisine-pack-one.png" class="img-fluid" alt="">
+                                                                    </div>   
+                                                                    <div class="event-details">
+                                                                        <h6>Chicken</h6>
+                                                                        <p style="color: #C0C0C0; margin-top: -10px;">This comes with a plate and meat only </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-12">
+                                                                <div class="d-flex margin-top-20 pull-right">
+                                                                    <p class="price">₦1500.00</p>
+                                                                    <button class="order">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                    </li>
+                                                    <li class="1" data-menu="Cow Meat" data-price="500">
+                                                        <div class="row">
+                                                            <div class="col-lg-8 col-md-13">
+                                                                <div class="d-flex">
+                                                                    <div class="img-wrapper">
+                                                                        <img src="images/cuisine-pack-one.png" class="img-fluid" alt="">
+                                                                    </div>   
+                                                                    <div class="event-details">
+                                                                        <h6>Cow Meat</h6>
+                                                                        <p style="color: #C0C0C0; margin-top: -10px;">This comes with a plate and meat only </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-12">
+                                                                <div class="d-flex margin-top-20 pull-right">
+                                                                    <p class="price">₦500.00</p>
+                                                                    <button class="order">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="tab-pane container fade" id="customer-reviews">
+                                        <div>
+                                            <h6 style="color: #2b2b2b;">Customer Reviews for Swallow &emsp;&emsp;(85 reviews)</h6>
+                                            <div>
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                                        <h6><strong>Baruwa James</strong>, 2017-12-11</h6>
+                                                        <h6 class="not-bold mt--15">Just Amazing</h6>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                                        <div class="store-stars">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                                        <h6><strong>George S</strong>, 2017-12-11</h6>
+                                                        <h6 class="not-bold mt--15">Just Amazing</h6>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                                        <div class="store-stars">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                                        <h6><strong>Olamide A</strong>, 2017-12-11</h6>
+                                                        <h6 class="not-bold mt--15">Good Experience</h6>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                                        <div class="store-stars">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane container fade" id="bookatable">
+                                        <div>
+                                            <h6>Book This Restaurant</h6>
+                                            <p class="mt--5">Discover a wide range of dining experience. Book now by filling out the form</p>
+                                        </div>
+                                        <div class="mt-30">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-12">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" name="" placeholder="First Name">
+                                                        </div>
+                                                    </div>
+                                                     <div class="col-lg-6 col-md-12">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" name="" placeholder="Last Name">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-12">
+                                                        <div class="form-group">
+                                                            <input type="email" class="form-control" name="" placeholder="Email">
+                                                        </div>
+                                                    </div>
+                                                     <div class="col-lg-6 col-md-12">
+                                                        <div class="form-group">
+                                                            <select class="form-control">
+                                                                <option>Guests</option>
+                                                                <option>2 Guests</option>
+                                                                <option>3 Guests</option>
+                                                                <option>4 Guests</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-12">
+                                                        <div class="form-group">
+                                                            <input type="date" class="form-control" name="" placeholder="Booking date">
+                                                        </div>
+                                                    </div>
+                                                     <div class="col-lg-6 col-md-12">
+                                                        <div class="form-group">
+                                                            <select class="form-control">
+                                                                <option>12:00AM</option>
+                                                                <option>2:00AM</option>
+                                                                <option>3:00PM</option>
+                                                                <option>4PM</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <div class="p-2">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" class="custom-control-input" id="available" name="availability">
+                                                            <label class="custom-control-label" for="available">
+                                                                <p>Available</p>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="p-2">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" class="custom-control-input" id="unavailable" name="availability" disabled>
+                                                            <label class="custom-control-label" for="unavailable">
+                                                                <p>Unavailable</p>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div style="margin-top: -20px;">
+                                                    <textarea class="form-control" rows="6" placeholder="Your instructions"></textarea>
+                                                </div>
+                                                <button type="submit" class="btn btn-info btn-join mt-30">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane container fade" id="restaurant-info">
+                                        <h6>About Italian Pizza House</h6>
+                                        <p>Base prepared fresh daily. Extra toppings are available in choose extra. Choose you sauce: Go for BBQ sauce or piri piri sauce on your pizza base for no extra cost.Choose your cut: Triangular, square, fingers or Un cut on any size pizza</p>
+
+                                        <div class="contact-wrapper">
+                                            <div class="row">
+                                                <div class="col-lg- col-md-6">
+                                                    <div class="store-name">
+                                                        <h6>Contact Details</h6>
+                                                        <p>Lagos, Nigeria</p>
+                                                        <h6>+234 803 4567</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg- col-md-6">
+                                                    <div class="store-name opening-hours pd-10">
+                                                        <h6>Opening Hours</h6>
+                                                        <p>Mon : 09:00 AM - 05:00 PM</p>
+                                                        <p>Tue : 09:00 AM - 12:50 PM</p>
+                                                        <p>Wed : 12:30 AM - 12:50 AM</p>
+                                                        <p>Thu : 09:00 AM - 06:59 PM</p>
+                                                        <p>Fri : 09:00 AM - 06:00 PM</p>
+                                                        <p>Sat : 09:00 AM - 04:30 PM</p>
+                                                        <p>Sun : Closed</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="checkout-wrapper">
+                                <h5>Your Order</h5>
+                                <hr>
+                                <div class="before-order">
+                                    <div class="jollof-points">
+                                        <p>You can also use Jollof Points at checkout to get a discount on ordered items</p>
+                                    </div>
+                                    <p class="no-items">There are no items in your cart. Start adding your dishes.</p>
+                                    <i class="fa fa-shopping-cart"></i>
+                                </div>
+                                <ul class="after-order">
+                                    <!-- order items symmetrically injected -->
+                                </ul>
+                                <button type="submit" class="btn btn-info btn-join" data-toggle="modal" data-target="#registerModal" style="width: 100%;">confirm order</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Register Modal -->
+                    <div class="modal" id="registerModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div>
+                                        <h4>Checkout</h4>
+                                        <hr>
+                                        <h5 class="text-center">You must be logged in to checkout</h5>
+                                    </div>
+                                    <ul class="nav nav-tabs mt-30">
+                                         <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="tab" href="#login">Log In</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#register">Create Account</a>
+                                        </li>
+                                       
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="login">
+                                            <div>
+                                                <div class="d-flex" style="justify-content: space-between;">
+                                                    <button class="btn btn-info btn-facebook">Sign In with Facebook</button>
+                                                    <button class="btn btn-info btn-google">Sign In with Google</button>
+                                                </div>
+                                                <p class="text-center mt-20">OR</p>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="email" name="" class="form-control" placeholder="Email address">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" name="" class="form-control" placeholder="Password">
+                                                    </div>
+                                                    <a href="" class="forgot">Forgot your password?</a>
+                                                    <div>
+                                                        <button type="button" class="btn btn-info btn-join" style="width: 100%;">Sign In</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="register">
+                                            <div>
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <div class="form-group">
+                                                                <input type="text" name="" class="form-control" placeholder="First Name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <div class="form-group">
+                                                                <input type="text" name="" class="form-control" placeholder="Last Name">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" name="" class="form-control" placeholder="Mobile Number">
+                                                    </div>  
+                                                    <div class="form-group">
+                                                        <input type="email" name="" class="form-control" placeholder="Email address">
+                                                    </div>         
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <select class="form-control">
+                                                                <option>State</option>
+                                                                <option>Lagos</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <select class="form-control">
+                                                                <option>City</option>
+                                                                <option>Ibadan</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <div class="form-group mt-10">
+                                                                <input type="password" name="" class="form-control" placeholder="Password">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <div class="form-group mt-10">
+                                                                <input type="password" name="" class="form-control" placeholder="Repeat password">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="newsletter" name="">
+                                                        <label class="custom-control-label" for="newsletter">
+                                                            <p style="font-size: 16px;">Yes, I want to receive the newsletter</p>
+                                                        </label>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="terms" name="">
+                                                        <label class="custom-control-label" for="terms">
+                                                            <p style="font-size: 16px;">I have read and accepted the <a href="">Terms and conditions</a> and the <a href="">Privacy policy</a></p>
+                                                        </label>
+                                                    </div>
+                                                    <div>
+                                                        <button type="button" class="btn btn-info btn-join" style="width: 100%;">Create Account</button>
+                                                    </div>
+                                                </form>
+                                                <p class="text-center mt-20">OR</p>
+                                                <div class="d-flex" style="justify-content: space-between;">
+                                                    <button class="btn btn-info btn-facebook">Sign In with Facebook</button>
+                                                    <button class="btn btn-info btn-google">Sign In with Google</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- other food supplements modal -->
+                <div class="modal" id="moreModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Extras</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div>
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                                        <div class="row">
+                                            <div class="col-lg-7 col-md-7 col-sm-7 col-7">
+                                                <h5>Extra Topping</h5>
+                                            </div>
+                                            <div class="col-lg-5 col-md-5 col-sm-5 col-5">
+                                                <span class="required-extras">Required 2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="extras-detail-options mt-10">
+                                    <div class="row mb-15">
+                                        <div class="col-lg-8 col-md-8 col-sm-8 col-sm-8 col-8">
+                                            <div class="extras-detail-att">
+                                                <div class="row">
+                                                    <div class="col-lg-7 col-md-7 col-sm-7 col-7">
+                                                        <input type="checkbox" id="" name="extra-food-1">
+                                                        <label for="">
+                                                            <span class="extra-title">Pepperoni</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 col-sm-5 col-5">
+                                                        <span class="extra-price">₦200</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                            <div class="qib-container">
+                                                <button type="button" class="minus qib-button" disabled="disabled" data-type="minus" data-field="quant[1]">-</button>
+                                                <div class="quantity">
+                                                <input type="number" id="quantity_5e32c1598a905" class="input-text qty text" step="1" min="1" max="30" name="quantity" value="1" title="Qty" size="4" inputmode="numeric">
+                                                </div>
+                                                <button type="button" class="plus qib-button" data-type="plus" data-field="quant[1]">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-15">
+                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                                            <div class="extras-detail-att">
+                                                <div class="row">
+                                                    <div class="col-lg-7 col-md-7 col-sm-7 col-7">
+                                                        <input type="checkbox" id="" name="extra-food-2">
+                                                        <label for="">
+                                                            <span class="extra-title">Tuna</span>    
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 col-sm-5 col-5">
+                                                        <span class="extra-price">₦200</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                            <div class="qib-container">
+                                                <button type="button" class="minus qib-button" disabled="disabled" data-type="minus" data-field="quant[1]">-</button>
+                                                <div class="quantity">
+                                                <input type="number" id="quantity_5e32c1598a905" class="input-text qty text" step="1" min="1" max="30" name="quantity" value="1" title="Qty" size="4" inputmode="numeric">
+                                                </div>
+                                                <button type="button" class="plus qib-button" data-type="plus" data-field="quant[1]">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-15">
+                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                                            <div class="extras-detail-att">
+                                                <div class="row">
+                                                    <div class="col-lg-7 col-md-7 col-sm-7 col-7">
+                                                        <input type="checkbox" id="" name="extra-food-3">
+                                                        <label for="">
+                                                            <span class="extra-title">Sweet corn</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 col-sm-5 col-5">
+                                                        <span class="extra-price">₦200</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-15">
+                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                                            <div class="extras-detail-att" style="border-bottom: 0;">
+                                                <div class="row">
+                                                    <div class="col-lg-7 col-md-7 col-sm-7 col-7">
+                                                        <input type="checkbox" id="" name="extra-food-4">
+                                                        <label for="">
+                                                            <span class="extra-title">Asparagus</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 col-sm-5 col-5">
+                                                        <span class="extra-price">₦200</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                            <div class="qib-container">
+                                                <button type="button" class="minus qib-button" disabled="disabled" data-type="minus" data-field="quant[1]">-</button>
+                                                <div class="quantity">
+                                                <input type="number" id="quantity_5e32c1598a905" class="input-text qty text" step="1" min="1" max="30" name="quantity" value="1" title="Qty" size="4" inputmode="numeric">
+                                                </div>
+                                                <button type="button" class="plus qib-button" data-type="plus" data-field="quant[1]">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-30">
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                                        <div class="row">
+                                            <div class="col-lg-7 col-md-7 col-sm-7 col-7">
+                                                <h5>Extra Topping</h5>
+                                            </div>
+                                            <div class="col-lg-5 col-md-5 col-sm-5 col-5">
+                                                <span class="required-extras">Required 1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="extras-detail-options">
+                                    <div class="row mb-15">
+                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                                            <div class="extras-detail-att">
+                                                <div class="row">
+                                                    <div class="col-lg-7 col-md-7 col-sm-7 col-7">
+                                                        <input type="radio" id="" name="extra-food">
+                                                        <label for="">
+                                                            <span class="extra-title">Lime Sauce</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 col-sm-5 col-5">
+                                                        <span class="extra-price">₦200</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-15">
+                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                                            <div class="extras-detail-att">
+                                                <div class="row">
+                                                    <div class="col-lg-7 col-md-7 col-sm-7 col-7">
+                                                        <input type="radio" id="" name="extra-food">
+                                                        <label for="">
+                                                            <span class="extra-title">Spicy Mayonnai</span>    
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 col-sm-5 col-5">
+                                                        <span class="extra-price">₦200</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-15">
+                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                                            <div class="extras-detail-att">
+                                                <div class="row">
+                                                    <div class="col-lg-7 col-md-7 col-sm-7 col-7">
+                                                        <input type="radio" id="" name="extra-food">
+                                                        <label for="">
+                                                            <span class="extra-title">Barbecue Sauce</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 col-sm-5 col-5">
+                                                        <span class="extra-price">₦200</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-15">
+                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                                            <div class="extras-detail-att" style="border-bottom: 0;">
+                                                <div class="row">
+                                                    <div class="col-lg-7 col-md-7 col-sm-7 col-7">
+                                                        <input type="radio" id="" name="extra-food">
+                                                        <label for="">
+                                                            <span class="extra-title">Garlic Sauce</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 col-sm-5 col-5">
+                                                        <span class="extra-price">₦200</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-info btn-join" data-dismiss="modal">Add to Menu</button>
+                            <button type="button" class="btn btn-info btn-join" data-dismiss="modal">Reset Fields</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="getintouch">
+            <h3>Get in Touch</h3>
+            <p><span>Send us a message</span><br> Or you can call us on +234555344444</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-8 col-sm-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                            <div>
+                                <h6>Quick Links</h6>
+                                <div>
+                                    <p><a href="cuisine.html">Cuisine</a></p>
+                                    <p><a href="fashion.html">Fashion</a></p>
+                                    <p><a href="lifestyle.html">Life Style</a></p>
+                                    <p><a href="scholar.html">Scholar</a></p>
+                                    <p><a href="business.html">Business</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                            <div>
+                                <h6>Information</h6>
+                                <div>
+                                    <p><a href="privacy.html">Privacy policy</a></p>
+                                    <p><a href="terms.html">Terms & condition</a></p>
+                                    <p><a href="faq.html">FAQ</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                            <div>
+                                <h6>Account</h6>
+                                <div>
+                                    <p><a href="">Advertise on Jollof.com</a></p>
+                                    <p><a href="">Add Your Business</a></p>
+                                    <p><a href="">Merchant Login</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-12 col-12">
+                    <div class="mt-20 pull-right">
+                        <h5>Mobile App</h5>
+                        <div class="d-flex">
+                            <div class="p-2">
+                                <a href=""><img src="images/google-play.png" class="img-fluid" alt="googleplay icon"></a>
+                            </div>
+                            <div class="p-2">
+                                <a href=""><img src="images/app-store.png" class="img-fluid" alt="appstore icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="mt-10">
+                <p class="pull-left">2019 C All Right Reserved, Jollof.com</p>
+                <p class="text-right"><a href="">Refund & Cancellation Policy</a> | <a href="">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script>
+        $(document).ready(function(e) {
+
+            //checks if cart item exists already
+            const cart = !localStorage.getItem('cart') ? {} : JSON.parse(localStorage.getItem('cart'));
+
+            $('button.order').click(function(e) {
+                e.preventDefault();
+                let meal = $(this).parents('li.1').data('menu');
+                let price = $(this).parents('li.1').data('price');
+
+                // console.log(menu+': '+price);
+
+                //check if item is on the cart already
+
+                if (cart[meal] == undefined) {
+
+                    //add the new order to the cart
+                    cart[meal] = { 'price': price, 'total': 1 }
+                } else {
+
+                    //increment the total number of orders
+                    total = cart[meal]['total'] + 1;
+
+                    //update the cart with the new totals
+                    cart[meal] = { 'price' : price, 'total': total}
+
+                    //Checkout
+                    let items = '';
+
+                    let i = 1;
+                    for (var orders in cart) {
+                        let menu = orders;
+                        let price = cart[orders]['price'];
+                        let qty = cart[orders]['total'];
+                        let total = qty * cart[orders]['price'];
+
+                        items += `<li>#${i}. ${orders}: ${price} x ${qty} <b>(N${total})</b> <button class="delete" data-item="${orders}">X</button></li>`;
+                        i++;
+                    }
+
+                    $('ul.after-order').html(items);
+                }
+
+                //let's store the cart in persistent session
+                localStorage.setItem('cart', JSON.stringify(cart));
+
+                console.table(cart);
+            });
+
+            //fetch and display all cart on load
+            console.table(cart);
+
+            //delete
+            $('html body').on('click', 'button.delete', function(e) {
+                e.preventDefault();
+
+                let order = $(this).data('item');
+
+                //confirm the remove / delete activity
+                if (confirm('Do you want to remove item from cart?')) {
+
+                    //check if order is in my cart
+                    if(cart[order] != undefined) {
+
+                        //delete the item from the cart
+                        delete cart[order];
+
+                        //rebuild the cart in sessions
+                        localStorage.setItem('cart', JSON.stringify(cart))
+
+                        window.location.href = window.location.href;
+                    }
+                }
+            });
+        });
+
+
+    </script> -->
+</body>
+</html>

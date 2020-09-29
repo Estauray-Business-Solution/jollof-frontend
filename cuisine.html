@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>Jollof</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="font-awesome-4.7.0/css/font-awesome-animation.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/smallerscreen.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
+    <style>
+        @media screen and (max-width: 768px) {
+            .logo-wrapper .navbar-collapse {
+                margin: 0px 15px;
+            }
+        }
+        .movies-wrapper {
+            background: linear-gradient(rgba(5, 5, 5, 0.8), rgba(5, 5, 5, 0.8)), url(images/cuisine-background.png);
+            padding-top: 100px;
+        }
+        .search-wrapper .btn.btn-info.btn-join {
+            margin-top: 10px;
+            width: 100%;
+        }
+        .services-wrapper .pull-right a {
+            color: #000;
+            margin-top: 47px;
+        }
+        .recommended-wrapper > div {
+            padding: 20px 10px 10px 10px;
+        }
+        .services-wrapper .cuisine-div h6 {
+            font-size: 23px;
+            margin-top: 10px;
+        }
+        .services-wrapper .recommended-wrapper h6 {
+            padding-top: 0;
+        }
+    </style>
+</head>
+<body> 
+    <header> 
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">    
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navb">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="cuisine.html">CUISINE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fashion.html">FASHION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lifestyle.html">LIFESTYLE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="scholar.html">SCHOLAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="business.html">BUSINESS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link gift-portal" href="gift.html">GIFT PORTAL</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link gift-portal" href="gift.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>          
+        </nav>
+
+        <!-- for larger screens -->
+        <div class="logo-wrapper">
+            <nav class="navbar navbar-expand-md">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid logo" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav ml-auto">
+                            <li>
+                                <a class="btn btn-info btn-join" href="">Register Restaurant</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Vendors</a>
+                            </li>
+                            <li class="nav-item cart-item">
+                                <a class="nav-link cart" href="#">
+                                    &emsp;<img src="images/cart.svg" class="img-fluid" alt="logo">
+                                    <div class="cart-number">2</div>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">
+                                    Account
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="d-flex">
+                                        <div>
+                                            <a class="dropdown-item btn btn-info btn-join" href="#">Sign up</a>
+                                        </div>
+                                        <div class="margin-left-5">
+                                            <a class="dropdown-item btn btn-info btn-join btn-signin" href="#">Sign in</a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p><a href="">My Orders</a></p>
+                                    <p><a href="">Message Center <span>(10)</span></a></p>
+                                    <p><a href="">Profile</a></p>
+                                    <p><a href="">Settings</a></p>
+                                    <p><a href="">Logout</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+            </nav>
+        </div>
+
+        <!-- for smaller screens -->
+        <div class="logo-wrapper" style="display: none;">
+            <nav class="navbar navbar-expand-md">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid logo" alt="logo"></a>
+                    <ul class="navbar-nav ml-auto cart-nav-mobile">
+                        <li>
+                            <a class="btn btn-info btn-join" href="" style="margin-top: 4px; width: auto; margin-right: 30px;">Register Restaurant</a>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="">All Stores</a>
+                            </li>
+                            <li class="nav-item cart-item">
+                                <a class="nav-link cart" href="#">
+                                    &emsp;<img src="images/cart.svg" class="img-fluid" alt="logo">
+                                    <div class="cart-number">2</div>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">
+                                    Account
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="d-flex">
+                                        <div>
+                                            <a class="dropdown-item btn btn-info btn-join" href="#">Sign up</a>
+                                        </div>
+                                        <div class="margin-left-5">
+                                            <a class="dropdown-item btn btn-info btn-join btn-signin" href="#">Sign in</a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p><a href="">My Orders</a></p>
+                                    <p><a href="">Message Center <span>(10)</span></a></p>
+                                    <p><a href="">Profile</a></p>
+                                    <p><a href="">Settings</a></p>
+                                    <p><a href="">Logout</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <article>
+            <div class="movies-wrapper">
+                <div class="container">
+                    <div>
+                        <h2>Jollof Cuisine</h2>
+                        <p>Every food you need delivered to your doorstep</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="container">
+                <div class="search-wrapper">
+                    <h4 class="text-center">Discover new restaurants in your locality</h4>
+                    <form>
+                        <label for="">Delivering to what location</label>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-input">
+                                    <select class="form-control">
+                                        <option>Choose your location</option>
+                                        <option>Lagos</option>
+                                        <option>Abuja</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-input">
+                                    <select class="form-control">
+                                        <option>Select your area</option>
+                                        <option>Gbagada</option>
+                                        <option>Ikoyi</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <a href="cuisine-search.html" class="btn btn-info btn-join">SEARCH</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="services-wrapper">
+                <div class="container">
+                    <div>
+                        <h3 class="text-center">How it works</h3>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="cuisine-div">
+                                    <img src="images/cuisine-one.png" class="img-fluid" alt="">
+                                    <h6>Search and Set Location</h6>
+                                    <p>Search for food and enter the location you want the food delivered to</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="cuisine-div">
+                                    <img src="images/cuisine-two.png" class="img-fluid" alt="">
+                                    <h6>Choose your Dish</h6>
+                                    <p style="padding-bottom: 20px;">Select from our menu for your prefered offer</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="cuisine-div">
+                                    <img src="images/cuisine-three.png" class="img-fluid" alt="">
+                                    <h6>Meet Us at your Door</h6>
+                                    <p style="padding-bottom: 20px;">Your oder will get to you in short time</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-40">
+                        <div>
+                            <div class="text-center">
+                                <h3>Choose from the most popular restaurants</h3>
+                                <p class="mt--15">Choose from some of the popular restaurants around</p>
+                            </div>
+                            <div class="row mt-30">
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <a href="cuisine-store.html">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/dish-one.png" class="img-fluid" alt="">
+                                            <p class="open">OPEN</p>
+                                            <div>
+                                                <h6>Cripsy Creme</h6>
+                                                <p class="estimated">Hot dogs, Pizza, Stakes, Fries</p>
+                                                <h6 class="fairly-bold amount">min order <span>n2,000</span></h6>
+                                                <p class="cuisine-time">45 min</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <a href="cuisine-store.html">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/dish-two.png" class="img-fluid" alt="">
+                                            <div class="close-wrapper"><p class="closed">closed</p></div>
+                                            <div class="text-center" style="padding-bottom: 22px;"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <a href="cuisine-store.html">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/dish-one.png" class="img-fluid" alt="">
+                                            <p class="open">OPEN</p>
+                                            <div>
+                                                <h6>Cripsy Creme</h6>
+                                                <p class="estimated">Hot dogs, Pizza, Stakes, Fries</p>
+                                                <h6 class="fairly-bold amount">min order <span>n2,000</span></h6>
+                                                <p class="cuisine-time">45 min</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-40">
+                            <div class="text-center">
+                                <h3>Featured Vendors</h3>
+                            </div>
+                        
+                            <div class="row vendor">
+                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                    <a href="">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/vendor-one.png" class="img-fluid" alt="">
+                                            <div>
+                                                <h6>Calabar Kitchen</h6>
+                                                <p>Ikoyi, Lagos</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                    <a href="">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/vendor-two.png" class="img-fluid" alt="">
+                                            <div>
+                                                <h6>Chen Yin Cuisine</h6>
+                                                <p>Ikoyi, Lagos</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                    <a href="">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/vendor-three.png" class="img-fluid" alt="">
+                                            <div>
+                                                <h6>Bukka Hut</h6>
+                                                <p>Ikoyi, Lagos</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                    <a href="">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/vendor-four.png" class="img-fluid" alt="">
+                                            <div>
+                                                <h6>Village Buka</h6>
+                                                <p>Ikoyi, Lagos</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-30">
+                            <div class="col-lg-6 col-md-6">
+                                <img src="images/bground.png" class="img-fluid mt-20" alt="">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <img src="images/b-ground.png" class="img-fluid mt-20" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="newsletter">
+                <div class="container">
+                    <h4>Subscribe to our newsletter</h4>
+                    <hr>
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-input">
+                                    <input type="text" class="form-control" name="search" placeholder="Your name">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-input">
+                                    <input type="email" class="form-control" name="search" placeholder="yourname@gmail.com">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <a href="cuisine-search.html" class="btn btn-info btn-join">Subscribe</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="getintouch">
+            <h3>Get in Touch</h3>
+            <p><span>Send us a message</span><br> Or you can call us on +234555344444</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-8 col-sm-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                            <div>
+                                <h6>Quick Links</h6>
+                                <div>
+                                    <p><a href="cuisine.html">Cuisine</a></p>
+                                    <p><a href="fashion.html">Fashion</a></p>
+                                    <p><a href="lifestyle.html">Life Style</a></p>
+                                    <p><a href="scholar.html">Scholar</a></p>
+                                    <p><a href="business.html">Business</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                            <div>
+                                <h6>Information</h6>
+                                <div>
+                                    <p><a href="privacy.html">Privacy policy</a></p>
+                                    <p><a href="terms.html">Terms & condition</a></p>
+                                    <p><a href="faq.html">FAQ</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                            <div>
+                                <h6>Account</h6>
+                                <div>
+                                    <p><a href="">Advertise on Jollof.com</a></p>
+                                    <p><a href="">Add Your Business</a></p>
+                                    <p><a href="">Merchant Login</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-12 col-12">
+                    <div class="mt-20 pull-right">
+                        <h5>Mobile App</h5>
+                        <div class="d-flex">
+                            <div class="p-2">
+                                <a href=""><img src="images/google-play.png" class="img-fluid" alt="googleplay icon"></a>
+                            </div>
+                            <div class="p-2">
+                                <a href=""><img src="images/app-store.png" class="img-fluid" alt="appstore icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="mt-10">
+                <p class="pull-left">2019 C All Right Reserved, Jollof.com</p>
+                <p class="text-right"><a href="">Refund & Cancellation Policy</a> | <a href="">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

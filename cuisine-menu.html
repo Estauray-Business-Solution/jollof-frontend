@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>Jollof</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="font-awesome-4.7.0/css/font-awesome-animation.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/smallerscreen.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
+    <style>
+        .movie-div {
+            background: linear-gradient(rgba(44, 51, 58, 0.8), rgba(44, 51, 58, 0.8)), url(images/cuisine-store.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 150px 0 20px 0;
+            border-bottom: 2px solid #F19005;
+        }
+        .grills-wrapper h4,
+        .grills-wrapper p,
+        .grills-wrapper h6 {
+            color: #FFF;
+            margin-bottom: 0;
+        }
+        .grills-wrapper h6 {
+            font-size: var(--h6--text);
+            margin-top: -7px;
+        }
+        .services-wrapper {
+            padding-top: 40px;
+            padding-bottom: 120px;
+        }
+        .services-wrapper h6 {
+            font-size: var(--h6--text);
+        }
+        .services-wrapper span {
+            text-transform: uppercase;
+            color: #F14040;
+        }
+        .services-wrapper table {
+            background: transparent;
+        }
+        .recommended-wrapper {
+            background: #FFFFFF;
+            box-shadow: 0px 2px 17px rgba(44, 51, 58, 0.1);
+            border-radius: 8px;
+            margin-bottom: 15px; 
+            border: none;
+        }
+        .recommended-wrapper > div {
+            padding: 0;
+        }
+        .services-wrapper .recommended-wrapper .input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child) {
+            text-align: center;
+            margin-top: 4px;
+            background: #F1F3F4;
+            border-radius: 4px;
+        }
+        .services-wrapper .recommended-wrapper .input-group {
+            background: #F7F7F7;
+            border-radius: 8px;
+        }
+        .btn.btn-info.btn-join {
+            padding: 10px 15px;
+            font-size: 9px;
+            line-height: normal;
+            margin-top: 7px;
+        }
+        .checkout-wrapper p {
+            margin-bottom: 0;
+        }
+        .checkout-wrapper .regular p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body style="background: #E5E5E5;">
+    <header> 
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">    
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navb">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cuisine.html">CUISINE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fashion.html">FASHION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lifestyle.html">LIFESTYLE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="scholar.html">SCHOLAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="business.html">BUSINESS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link gift-portal" href="gift.html">GIFT PORTAL</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link gift-portal" href="gift.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>          
+        </nav>
+        <div class="logo-wrapper">
+            <nav class="navbar navbar-expand-md">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid logo" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Vendors</a>
+                            </li>
+                            <li class="nav-item cart-item">
+                                <a class="nav-link cart" href="#">
+                                    &emsp;<img src="images/cart.svg" class="img-fluid" alt="logo">
+                                    <div class="cart-number">2</div>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">
+                                    Account
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="d-flex">
+                                        <div>
+                                            <a class="dropdown-item btn btn-info btn-join" href="#">Sign up</a>
+                                        </div>
+                                        <div class="margin-left-5">
+                                            <a class="dropdown-item btn btn-info btn-join btn-signin" href="#">Sign in</a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p><a href="">My Orders</a></p>
+                                    <p><a href="">Message Center <span>(10)</span></a></p>
+                                    <p><a href="">Profile</a></p>
+                                    <p><a href="">Settings</a></p>
+                                    <p><a href="">Logout</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <div class="movie-div">
+                <div class="grills-wrapper">
+                    <div class="container">
+                        <div class="d-flex">
+                            <div class="p-2">
+                                <h4>Sanni Grills</h4>
+                            </div>
+                            <div class="p-2">
+                                <span class="open">OPEN</span>
+                            </div>
+                        </div>
+                        <h6>Lekki, Phase 1. Lagos</h6>
+                        <div class="store-stars">
+                            <i class="fa fa-star" style="color: #6FCF97;"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Estimated Delivery Time: 30 -40 Mins</p>
+                        <p>MinimumOrder: N 0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="success-wrapper">
+                <p class="bold">Successful! Item has been added to cart &nbsp; <i class="fa fa-close"></i></p>
+            </div>
+            <div class="failure-wrapper">
+                <p class="bold">Failure! Item is unable to be added to cart &nbsp; <i class="fa fa-close"></i></p>
+            </div>
+            <div class="services-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <div class="cuisine-store-details">
+                                <div class="store-name">
+                                    <h6>Bukka Hut</h6>
+                                    <p class="restaurant-info">Restaurant Information</p>
+                                    <div>
+                                        <p>Menu</p>
+                                        <div>
+                                            <p>&emsp;&emsp;Main Menu</p>
+                                            <p>&emsp;&emsp;Swallow</p>
+                                            <p>&emsp;&emsp;Meat</p>
+                                            <p>&emsp;&emsp;Soups</p>
+                                        </div>
+                                        <p>Book a table</p>
+                                        <p class="store-reviews">Reviews</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="store-name opening-hours pd-10">
+                                <h6>Opening Hours</h6>
+                                <p>Mon : 09:00 AM - 05:00 PM</p>
+                                <p>Tue : 09:00 AM - 12:50 PM</p>
+                                <p>Wed : 12:30 AM - 12:50 AM</p>
+                                <p>Thu : 09:00 AM - 06:59 PM</p>
+                                <p>Fri : 09:00 AM - 06:00 PM</p>
+                                <p>Sat : 09:00 AM - 04:30 PM</p>
+                                <p>Sun : Closed</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-5">
+                            <div class="mainmenu-wrapper">
+                                <h5>Main Menu</h5>
+                                <div class="d-flex recommended-wrapper">
+                                    <div class="row">
+                                        <div class="col-lg-5 col-md-6">
+                                            <img src="images/cuisine-pack-one.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-lg-7 col-md-6">
+                                            <div class="event-details">
+                                                <h6>Jollof Rice</h6>
+                                                <p style="color: #C0C0C0;">This comes with a plate and meat only </p>
+                                                <p class="bold">N 700</p>
+                                                <div class="row">
+                                                    <div class="col-lg-7 col-md-8">
+                                                        <div class="pull-right">
+                                                            <div class="input-group">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                                        <img src="images/minus.png" class="img-fluid" alt="minus icon">
+                                                                    </button>
+                                                                </span>
+                                                                <input type="text" name="quant[1]" class="form-control input-number selection-value" value="1" min="1" max="10">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]" style="margin-right: -10px;">
+                                                                        <img src="images/plus.png" id="adult-plus" class="img-fluid" alt="plus icon">
+                                                                    </button>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-12">
+                                                        <div>
+                                                            <a href="" class="btn btn-info btn-join">add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <h5>Menu Option</h5>
+                                <div class="d-flex recommended-wrapper">
+                                    <div class="row">
+                                        <div class="col-lg-5 col-md-6">
+                                            <img src="images/cuisine-pack-one.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-lg-7 col-md-6">
+                                            <div class="event-details">
+                                                <h6>Roasted Chicken</h6>
+                                                <div class="row">
+                                                    <div class="col-lg-5 col-md-5">
+                                                        <p class="bold" style="margin-bottom: 0;">N 800</p>
+                                                        <span class="meat">Meat</span>
+                                                    </div>
+                                                    <div class="col-lg-7 col-md-7">
+                                                        <div class="pull-right">
+                                                            <div class="input-group">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                                        <img src="images/minus.png" class="img-fluid" alt="minus icon">
+                                                                    </button>
+                                                                </span>
+                                                                <input type="text" name="quant[1]" class="form-control input-number selection-value" value="1" min="1" max="10">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]" style="margin-right: -10px;">
+                                                                        <img src="images/plus.png" id="adult-plus" class="img-fluid" alt="plus icon">
+                                                                    </button>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex recommended-wrapper">
+                                    <div class="row">
+                                        <div class="col-lg-5 col-md-6">
+                                            <img src="images/cuisine-pack-one.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-lg-7 col-md-6">
+                                            <div class="event-details">
+                                                <h6>Spinash Sauce</h6>
+                                                <div class="row">
+                                                    <div class="col-lg-5 col-md-5">
+                                                        <p class="bold" style="margin-bottom: 0;">N 800</p>
+                                                        <span class="meat">Soup</span>
+                                                    </div>
+                                                    <div class="col-lg-7 col-md-7">
+                                                        <div class="pull-right">
+                                                            <div class="input-group">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                                        <img src="images/minus.png" class="img-fluid" alt="minus icon">
+                                                                    </button>
+                                                                </span>
+                                                                <input type="text" name="quant[1]" class="form-control input-number selection-value" value="1" min="1" max="10">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]" style="margin-right: -10px;">
+                                                                        <img src="images/plus.png" id="adult-plus" class="img-fluid" alt="plus icon">
+                                                                    </button>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex recommended-wrapper">
+                                    <div class="row">
+                                        <div class="col-lg-5 col-md-6">
+                                            <img src="images/cuisine-pack-one.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-lg-7 col-md-6">
+                                            <div class="event-details">
+                                                <h6>Beans</h6>
+                                                <div class="row">
+                                                    <div class="col-lg-5 col-md-5">
+                                                        <p class="bold" style="margin-bottom: 0;">N 800</p>
+                                                        <span class="meat">Protein</span>
+                                                    </div>
+                                                    <div class="col-lg-7 col-md-7">
+                                                        <div class="pull-right">
+                                                            <div class="input-group">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                                        <img src="images/minus.png" class="img-fluid" alt="minus icon">
+                                                                    </button>
+                                                                </span>
+                                                                <input type="text" name="quant[1]" class="form-control input-number selection-value" value="1" min="1" max="10">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]" style="margin-right: -10px;">
+                                                                        <img src="images/plus.png" id="adult-plus" class="img-fluid" alt="plus icon">
+                                                                    </button>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex recommended-wrapper">
+                                    <div class="row">
+                                        <div class="col-lg-5 col-md-6">
+                                            <img src="images/cuisine-pack-one.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-lg-7 col-md-6">
+                                            <div class="event-details">
+                                                <h6>Cocacola</h6>
+                                                <div class="row">
+                                                    <div class="col-lg-5 col-md-5">
+                                                        <p class="bold" style="margin-bottom: 0;">N 800</p>
+                                                        <span class="meat">Drinks</span>
+                                                    </div>
+                                                    <div class="col-lg-7 col-md-7">
+                                                        <div class="pull-right">
+                                                            <div class="input-group">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                                        <img src="images/minus.png" class="img-fluid" alt="minus icon">
+                                                                    </button>
+                                                                </span>
+                                                                <input type="text" name="quant[1]" class="form-control input-number selection-value" value="1" min="1" max="10">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]" style="margin-right: -10px;">
+                                                                        <img src="images/plus.png" id="adult-plus" class="img-fluid" alt="plus icon">
+                                                                    </button>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex recommended-wrapper">
+                                    <div class="row">
+                                        <div class="col-lg-5 col-md-6">
+                                            <img src="images/cuisine-pack-one.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-lg-7 col-md-6">
+                                            <div class="event-details">
+                                                <h6>Bottle Water</h6>
+                                                <div class="row">
+                                                    <div class="col-lg-5 col-md-5">
+                                                        <p class="bold" style="margin-bottom: 0;">N 800</p>
+                                                        <span class="meat">Drinks</span>
+                                                    </div>
+                                                    <div class="col-lg-7 col-md-7">
+                                                        <div class="pull-right">
+                                                            <div class="input-group">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                                        <img src="images/minus.png" class="img-fluid" alt="minus icon">
+                                                                    </button>
+                                                                </span>
+                                                                <input type="text" name="quant[1]" class="form-control input-number selection-value" value="1" min="1" max="10">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]" style="margin-right: -10px;">
+                                                                        <img src="images/plus.png" id="adult-plus" class="img-fluid" alt="plus icon">
+                                                                    </button>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="checkout-wrapper">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+
+
+                <!-- Order Information Modal -->
+                <!-- <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            
+                            <div class="modal-header">
+                                <h5 class="modal-title">Order Information</h5>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            
+                            <div class="modal-body">
+                                <div class="table-responsive">
+                                    <table class="table table-borderless">
+                                        <thead style="background: #F1F3F4;">
+                                            <tr>
+                                                <th>
+                                                    <h6>Product</h6>
+                                                </th>
+                                                <th>
+                                                    <h6>Qty</h6>
+                                                </th>
+                                                <th>
+                                                    <h6 class="text-right">Price</h6>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="p-2">
+                                                            <img src="images/cookies.png" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="p-2">
+                                                            <p class="bold">Coconut Rice</p>
+                                                            <div class="d-flex">
+                                                                <div class="p-2">
+                                                                    <img src="images/delete.png" class="img-fluid" alt="">
+                                                                </div>
+                                                                <div class="p-2">
+                                                                    <img src="images/edit.png" class="img-fluid" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>2</td>
+                                                <td>
+                                                    <div>
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6">
+                                                                <div>
+                                                                    <p>Order Number</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6">
+                                                                <div class="text-right">
+                                                                    <p>00018</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6">
+                                                                <div>
+                                                                    <p>Date</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6">
+                                                                <div class="text-right">
+                                                                    <p>October 23, 2019</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6">
+                                                                <div>
+                                                                    <p>Sub Total</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6">
+                                                                <div class="text-right">
+                                                                    <p>N 1,320.00</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6">
+                                                                <div>
+                                                                    <p>VAT</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6">
+                                                                <div class="text-right">
+                                                                    <p>0%</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6">
+                                                                <div>
+                                                                    <p>Payment Method</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6">
+                                                                <div class="text-right">
+                                                                    <p>Card Payment</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6">
+                                                                <div>
+                                                                    <h6>Total</h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6">
+                                                                <div class="text-right">
+                                                                    <h6>N 1,320.00</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                           
+                            <div class="modal-footer">
+                                <div class="d-flex">
+                                    <div class="p-2">
+                                        <a href="fashion-shopping-cart.html" class="btn btn-info btn-join btn-guest" id="proceed">Empty cart</a>
+                                    </div>
+                                    <div class="p-2">
+                                        <a href="fashion-shopping-cart.html" class="btn btn-info btn-join" id="proceed">Checkout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="getintouch">
+            <h3>Get in Touch</h3>
+            <p><span>Send us a message</span><br> Or you can call us on +234555344444</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-8 col-sm-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                            <div>
+                                <h6>Quick Links</h6>
+                                <div>
+                                    <p><a href="cuisine.html">Cuisine</a></p>
+                                    <p><a href="fashion.html">Fashion</a></p>
+                                    <p><a href="lifestyle.html">Life Style</a></p>
+                                    <p><a href="scholar.html">Scholar</a></p>
+                                    <p><a href="business.html">Business</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                            <div>
+                                <h6>Information</h6>
+                                <div>
+                                    <p><a href="privacy.html">Privacy policy</a></p>
+                                    <p><a href="terms.html">Terms & condition</a></p>
+                                    <p><a href="faq.html">FAQ</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                            <div>
+                                <h6>Account</h6>
+                                <div>
+                                    <p><a href="">Advertise on Jollof.com</a></p>
+                                    <p><a href="">Add Your Business</a></p>
+                                    <p><a href="">Merchant Login</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-12 col-12">
+                    <div class="mt-20 pull-right">
+                        <h5>Mobile App</h5>
+                        <div class="d-flex">
+                            <div class="p-2">
+                                <a href=""><img src="images/google-play.png" class="img-fluid" alt="googleplay icon"></a>
+                            </div>
+                            <div class="p-2">
+                                <a href=""><img src="images/app-store.png" class="img-fluid" alt="appstore icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="mt-10">
+                <p class="pull-left">2019 C All Right Reserved, Jollof.com</p>
+                <p class="text-right"><a href="">Refund & Cancellation Policy</a> | <a href="">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/movie-ticket.js"></script>
+</body>
+</html>

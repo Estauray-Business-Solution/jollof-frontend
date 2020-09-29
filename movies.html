@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>Jollof - Movies</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="font-awesome-4.7.0/css/font-awesome-animation.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/smallerscreen.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
+    <style>
+        .services-wrapper {
+            padding-top: 20px;
+        }
+        .services-wrapper .pull-right a {
+            color: #000;
+            margin-top: 35px;
+        }
+        .services-wrapper .recommended-wrapper span {
+            color: #545B62;
+        }
+        .recommended-wrapper > div {
+            padding: 0;
+        }
+        .recommended-wrapper {
+            margin-bottom: 5px;
+            border: 0;
+            position: relative;
+        }
+        .recommended-wrapper .btn.btn-info.btn-join {
+            width: auto;
+            right: 15px;
+            bottom: 100px;
+            padding: 10px 40px;
+            position: absolute;
+        }
+        .recommended-wrapper p {
+            margin-bottom: 0;
+        }
+        .btn.btn-info.btn-join {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .services-wrapper .recommended-wrapper h5 {
+            font-size: 18px;
+        }
+        .services-wrapper .recommended-wrapper p {
+            font-size: 14px;
+        }
+        @media screen and (max-width: 550px) {
+            .navbar-nav.cart-nav-mobile .dropdown-menu {
+                left: auto;
+                top: 50px;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .search-wrapper input,
+            .search-wrapper select,
+            .search-wrapper button {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body> 
+    <header> 
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">    
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navb">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cuisine.html">CUISINE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fashion.html">FASHION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="lifestyle.html">LIFESTYLE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="scholar.html">SCHOLAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="business.html">BUSINESS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link gift-portal" href="gift.html">GIFT PORTAL</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link gift-portal" href="gift.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>          
+        </nav>
+
+        <!-- for larger screens -->
+        <div class="logo-wrapper hidden-sm">
+            <nav class="navbar navbar-expand-md">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid logo" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="movies.html">Movies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="events.html">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="travels.html">Travels</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tour.html">Tourism</a>
+                            </li>
+                            <li class="nav-item cart-item dropdown">
+                                <a class="nav-link cart dropdown-toggle" href="" data-toggle="dropdown">
+                                    &emsp;<img src="images/cart.svg" class="img-fluid" alt="logo">
+                                    <div class="cart-number">2</div>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div>
+                                        <h6>Fashion Cart</h6>
+                                        <div class="d-flex">
+                                            <div class="p-2">
+                                                <img src="images/product-three.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="p-2">
+                                                <p class="name">Product Name</p>
+                                                <p class="price">&#x20a6 1000</p>
+                                            </div>
+                                        </div>
+                                        <a href="" class="btn btn-info btn-join">Checkout</a>
+                                    </div>
+                                    <div class="mt-30">
+                                        <h6>Cuisine Cart</h6>
+                                        <div class="d-flex">
+                                            <div class="p-2">
+                                                <img src="images/dish-one.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="p-2">
+                                                <p class="name">Cripsy Creme</p>
+                                                <p class="price">&#x20a6 2000</p>
+                                            </div>
+                                        </div>
+                                        <a href="" class="btn btn-info btn-join">Checkout</a>
+                                    </div>
+                                    <div class="mt-30">
+                                        <hr class="hr-text" data-content="Or">
+                                    </div>
+                                    <a href="" class="btn btn-info btn-join" style="width: 100%;">Checkout All</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">
+                                    Account
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="d-flex">
+                                        <div>
+                                            <a class="dropdown-item btn btn-info btn-join" href="#">Sign up</a>
+                                        </div>
+                                        <div class="margin-left-5">
+                                            <a class="dropdown-item btn btn-info btn-join btn-signin" href="#">Sign in</a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p><a href="">My Orders</a></p>
+                                    <p><a href="">Message Center <span>(10)</span></a></p>
+                                    <p><a href="">Profile</a></p>
+                                    <p><a href="">Settings</a></p>
+                                    <p><a href="">Logout</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+            </nav>
+        </div>
+
+        <!-- for smaller screens -->
+        <div class="logo-wrapper hidden-md hidden-lg">
+            <nav class="navbar navbar-expand-md">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid logo" alt="logo"></a>
+                    <ul class="navbar-nav ml-auto cart-nav-mobile">
+                        <li class="nav-item cart-item dropdown">
+                            <a class="nav-link cart dropdown-toggle" href="" data-toggle="dropdown">
+                                &emsp;<img src="images/cart.svg" class="img-fluid" alt="logo">
+                                <div class="cart-number">2</div>
+                            </a>
+                            <div class="dropdown-menu">
+                                <div>
+                                    <h6>Fashion Cart</h6>
+                                    <div class="d-flex">
+                                        <div class="p-2">
+                                            <img src="images/product-three.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="name">Product Name</p>
+                                            <p class="price">&#x20a6 1000</p>
+                                        </div>
+                                    </div>
+                                    <a href="" class="btn btn-info btn-join">Checkout</a>
+                                </div>
+                                <div class="mt-30">
+                                    <h6>Cuisine Cart</h6>
+                                    <div class="d-flex">
+                                        <div class="p-2">
+                                            <img src="images/dish-one.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="name">Cripsy Creme</p>
+                                            <p class="price">&#x20a6 2000</p>
+                                        </div>
+                                    </div>
+                                    <a href="" class="btn btn-info btn-join">Checkout</a>
+                                </div>
+                                <div class="mt-30">
+                                    <hr class="hr-text" data-content="Or">
+                                </div>
+                                <a href="" class="btn btn-info btn-join" style="width: 100%;">Checkout All</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">
+                                Account
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="d-flex">
+                                    <div>
+                                        <a class="dropdown-item btn btn-info btn-join" href="#">Sign up</a>
+                                    </div>
+                                    <div class="margin-left-5">
+                                        <a class="dropdown-item btn btn-info btn-join btn-signin" href="#">Sign in</a>
+                                    </div>
+                                </div>
+                                <hr>
+                                <p><a href="">My Orders</a></p>
+                                <p><a href="">Message Center <span>(10)</span></a></p>
+                                <p><a href="">Profile</a></p>
+                                <p><a href="">Settings</a></p>
+                                <p><a href="">Logout</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="movies.html">Movies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="events.html">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="travels.html">Travels</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tour.html">Tourism</a>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <div class="movies-wrapper">
+                <div class="container">
+                    <div>
+                        <h2>Jollof Movies</h2>
+                        <p>Your one stop site for movie premiere</p>
+                    </div>
+                </div> 
+            </div> 
+            <div class="container">
+                <div class="search-wrapper">
+                    <h4 class="text-center">Search Movies</h4>
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-4">
+                                <div class="form-input">
+                                    <input type="text" class="form-control" name="search" placeholder="Hollywood">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-2"></div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <select class="form-control">
+                                            <option>All Cinemas</option>
+                                            <option>Abuja</option>
+                                            <option>Kano</option>
+                                            <option>Port Harcourt</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <a href="movie-search.html" class="btn btn-info btn-join">SEARCH</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>    
+            <div class="services-wrapper">
+                <div class="container"> 
+                    <div>
+                        <div id="movies-tab">
+                            <div class="d-flex" style="justify-content: center;">
+                                <div>
+                                    <h4>Showing:</h4>
+                                </div>
+                                <div class="tab">
+                                    <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'Today')">Today</button>
+                                     <button class="tablinks" onclick="openCity(event, 'Tomorrow')">Tomorrow</button>
+                                    <button class="tablinks" onclick="openCity(event, 'Tuesday')">Tuesday</button>
+                                    <button class="tablinks" onclick="openCity(event, 'Wednesday')">Wednesday</button>
+                                    <button class="tablinks" onclick="openCity(event, 'Thursday')">Thursday</button>
+                                    <button class="tablinks" onclick="openCity(event, 'Friday')">Friday</button>
+                                    <button class="tablinks" onclick="openCity(event, 'Saturday')">Saturday</button>
+                                    <button class="tablinks" onclick="openCity(event, 'Sunday')">Sunday</button>
+                                </div>
+                            </div>
+                            <!-- Tab content -->
+                            <div id="Today" class="tabcontent">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>Angel Has Fallen</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 00min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-two.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>The Lion King</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h:15min</p>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-three.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>Spider-Man Far from Home</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 15min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-four.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>VIP - Hobbs & Shaw</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 15min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Tomorrow" class="tabcontent">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>Angel Has Fallen</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 00min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-two.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>The Lion King</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h:15min</p>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-three.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>Spider-Man Far from Home</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 15min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-four.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>VIP - Hobbs & Shaw</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 15min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Tuesday" class="tabcontent">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>Angel Has Fallen</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 00min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-two.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>The Lion King</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h:15min</p>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-three.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>Spider-Man Far from Home</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 15min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-four.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>VIP - Hobbs & Shaw</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 15min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Wednesday" class="tabcontent">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>Angel Has Fallen</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 00min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-two.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>The Lion King</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h:15min</p>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-three.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>Spider-Man Far from Home</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 15min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-four.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>VIP - Hobbs & Shaw</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 15min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Thursday" class="tabcontent">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>Angel Has Fallen</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 00min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-two.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>The Lion King</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h:15min</p>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-three.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>Spider-Man Far from Home</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 15min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-four.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>VIP - Hobbs & Shaw</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 15min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Friday" class="tabcontent">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>Angel Has Fallen</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 00min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-two.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>The Lion King</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h:15min</p>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-three.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>Spider-Man Far from Home</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 15min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-four.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>VIP - Hobbs & Shaw</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 15min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Saturday" class="tabcontent">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>Angel Has Fallen</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 00min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-two.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>The Lion King</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h:15min</p>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-three.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>Spider-Man Far from Home</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 15min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-four.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>VIP - Hobbs & Shaw</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 15min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Sunday" class="tabcontent">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>Angel Has Fallen</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 00min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-two.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>The Lion King</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h:15min</p>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-three.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>Spider-Man Far from Home</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 15min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                        <div class="recommended-wrapper">
+                                            <img src="images/movie-search-four.png" class="img-fluid" alt="">
+                                            <div>
+                                                <div>
+                                                    <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                                </div>
+                                                <h5>VIP - Hobbs & Shaw</h5>
+                                                <div>
+                                                    <p>Release: July 20, 2017</p>
+                                                    <p>Running Time: 2h 15min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-center">Newest Movies</h4>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                <div class="recommended-wrapper">
+                                    <img src="images/movie-search.png" class="img-fluid" alt="">
+                                    <div>
+                                        <div>
+                                            <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                        </div>
+                                        <h5>Angel Has Fallen</h5>
+                                        <div>
+                                            <p>Release: July 20, 2017</p>
+                                            <p>Running Time: 2h 00min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                <div class="recommended-wrapper">
+                                    <img src="images/movie-search-two.png" class="img-fluid" alt="">
+                                    <div>
+                                        <div>
+                                            <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                        </div>
+                                        <h5>The Lion King</h5>
+                                        <div>
+                                            <p>Release: July 20, 2017</p>
+                                            <p>Running Time: 2h:15min</p>
+                                        </div>
+                                    </div>
+                                </div>   
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                <div class="recommended-wrapper">
+                                    <img src="images/movie-search-three.png" class="img-fluid" alt="">
+                                    <div>
+                                        <div>
+                                            <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                        </div>
+                                        <h5>Spider-Man Far from Home</h5>
+                                        <div>
+                                            <p>Release: July 20, 2017</p>
+                                            <p>Running Time: 2h 15min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                <div class="recommended-wrapper">
+                                    <img src="images/movie-search-four.png" class="img-fluid" alt="">
+                                    <div>
+                                        <div>
+                                            <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                        </div>
+                                        <h5>VIP - Hobbs & Shaw</h5>
+                                        <div>
+                                            <p>Release: July 20, 2017</p>
+                                            <p>Running Time: 2h 15min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-center mt-30">More Movies</h4>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                <div class="recommended-wrapper">
+                                    <img src="images/movie-search.png" class="img-fluid" alt="">
+                                    <div>
+                                        <div>
+                                            <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                        </div>
+                                        <h5>Angel Has Fallen</h5>
+                                        <div>
+                                            <p>Release: July 20, 2017</p>
+                                            <p>Running Time: 2h 00min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                <div class="recommended-wrapper">
+                                    <img src="images/movie-search-two.png" class="img-fluid" alt="">
+                                    <div>
+                                        <div>
+                                            <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                        </div>
+                                        <h5>The Lion King</h5>
+                                        <div>
+                                            <p>Release: July 20, 2017</p>
+                                            <p>Running Time: 2h 15min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                <div class="recommended-wrapper">
+                                    <img src="images/movie-search-three.png" class="img-fluid" alt="">
+                                    <div>
+                                        <div>
+                                            <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                        </div>
+                                        <h5>Spider-Man Far from Home</h5>
+                                        <div>
+                                            <p>Release: July 20, 2017</p>
+                                            <p>Running Time: 2h 15min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 mt-30">
+                                <div class="recommended-wrapper">
+                                    <img src="images/movie-search-four.png" class="img-fluid" alt="">
+                                    <div>
+                                        <div>
+                                            <a href="movie-ticket.html" class="btn btn-info btn-join">buy ticket</a>
+                                        </div>
+                                        <h5>VIP - Hobbs & Shaw</h5>
+                                        <div>
+                                            <p>Release: July 20, 2017</p>
+                                            <p>Running Time: 2h 15min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="text-center showmore mt-20">
+                        <a href=""><h6>Show More</h6></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="getintouch">
+            <h3>Get in Touch</h3>
+            <p><span>Send us a message</span><br> Or you can call us on +234555344444</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-8 col-sm-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                            <div>
+                                <h6>Quick Links</h6>
+                                <div>
+                                    <p><a href="cuisine.html">Cuisine</a></p>
+                                    <p><a href="fashion.html">Fashion</a></p>
+                                    <p><a href="lifestyle.html">Life Style</a></p>
+                                    <p><a href="scholar.html">Scholar</a></p>
+                                    <p><a href="business.html">Business</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                            <div>
+                                <h6>Information</h6>
+                                <div>
+                                    <p><a href="privacy.html">Privacy policy</a></p>
+                                    <p><a href="terms.html">Terms & condition</a></p>
+                                    <p><a href="faq.html">FAQ</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                            <div>
+                                <h6>Account</h6>
+                                <div>
+                                    <p><a href="">Advertise on Jollof.com</a></p>
+                                    <p><a href="">Add Your Business</a></p>
+                                    <p><a href="">Merchant Login</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-12 col-12">
+                    <div class="mt-20 pull-right">
+                        <h5>Mobile App</h5>
+                        <div class="d-flex">
+                            <div class="p-2">
+                                <a href=""><img src="images/google-play.png" class="img-fluid" alt="googleplay icon"></a>
+                            </div>
+                            <div class="p-2">
+                                <a href=""><img src="images/app-store.png" class="img-fluid" alt="appstore icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="mt-10">
+                <p class="pull-left">2019 C All Right Reserved, Jollof.com</p>
+                <p class="text-right"><a href="">Refund & Cancellation Policy</a> | <a href="">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>
