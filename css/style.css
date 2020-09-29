@@ -282,6 +282,11 @@ header .logo-wrapper .navbar-nav {
     color: #545B62;
     font-size: var(--input-text);
 }
+
+.merchant-register-div textarea, .merchant-register-div select {
+     border-radius: 8px;
+}
+
 .merchant-register-div select, .merchant-register-div textarea {
     background: #E0E0E0;
 }

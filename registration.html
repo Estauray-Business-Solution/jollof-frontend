@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-	<title>Jollof</title>
+<html lang="en">
+<head>
+	<title>Jollof - signup</title>
 	<meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -14,14 +14,12 @@
     <link href="css/hover-min.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
     <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
-
-    <!-- datatable css -->
-        <link rel="stylesheet" href="//cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
     <style>
-        @media screen and (max-width: 768px) {
-            .logo-wrapper .navbar-collapse {
-                margin: 0px 15px;
-            }
+        .merchant-register-div {
+            margin: 70px auto 85px auto;
+        }
+        .continue {
+            padding-top: 40px;
         }
     </style>
 </head>
@@ -73,7 +71,7 @@
             <nav class="navbar navbar-expand-md">
                 <div class="container" style="justify-content: space-between;">
                     <div>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid logo" alt="logo"></a>
+                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid logo" alt="logo"></a>
                     </div>
                     
                     <div>
@@ -134,7 +132,7 @@
                                     <p><a href="my-orders.html">My Orders</a></p>
                                     <p><a href="profile.html">Profile</a></p>
                                     <p><a href="settings.html">Settings</a></p>
-                                    <p><a href="">Logout</a></p>
+                                    <p><a href="logout.html">Logout</a></p>
                                 </div>
                             </li>
                         </ul>
@@ -201,9 +199,10 @@
                                     </div>
                                 </div>
                                 <hr>
-                                 <p><a href="my-orders.html">My Orders</a></p>
-                                    <p><a href="profile.html">Profile</a></p>
-                                    <p><a href="settings.html">Settings</a></p>
+                                <p><a href="">My Orders</a></p>
+                                <p><a href="">Message Center <span>(10)</span></a></p>
+                                <p><a href="">Profile</a></p>
+                                <p><a href="">Settings</a></p>
                                 <p><a href="">Logout</a></p>
                             </div>
                         </li>
@@ -218,126 +217,229 @@
             </nav>
         </div>
     </header>
-
     <main>
         <article>
-            <div class="my-orders-wrapper">
-                <div class="container">
+            <div class="merchant-register-div">
+                <div class="text-center">
+                  <h3>Get Started on Jollof ...</h3>
+                    <p>Create your account to be a part of this great community.</p>
+                </div>
+                <br/>
+                <form action="">
 
-                    <br/><br/>
-
-                    <div class="">
-                            <h4>My Account</h4>
-                             <p>Hello {name} (not {name}? <a href="logout.php">Log out</a>)</p>
-                             <hr/>
+                    <div class="text-capitalize">
+                     <h6>Register as</h6>
+                    </div>
+                                     <!-- <hr/> -->
+                	  <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                             <div class="card">
+                                <div class="card-body">
+                            <div class="custom-control custom-radio">
+                              <input type="radio" id="customer" name="registerType" class="custom-control-input">
+                              <label class="custom-control-label" for="customer">A Customer</label>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                         <div class="col-lg-6 col-md-6">
+                              <div class="card">
+                                 <div class="card-body">
+                            <div class="custom-control custom-radio">
+                              <input type="radio" id="merchant" name="registerType" class="custom-control-input">
+                              <label class="custom-control-label" for="merchant">A Merchant</label>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
                     </div>
 
-                    <div class="row">
-                     <br/>
-                            <div class="col-12">
-                                <h6 class="text-uppercase">My Orders</h6>
+                    <!-- <hr/> -->
+
+                    <br/>
+
+<!--                 	<div class="text-capitalize">
+                	    <h6>Personal Information</h6>
+                	</div>
+                	                 <hr/> -->
+                    <div class="row" id="business-type">
+                        <div class="col-lg-12 col-md-12">
+                         <div class="form-group">
+                             <label for="">What type of business are you opening on Jollof?</label>
+                              <select class="form-control" id="business-type">
+                                <option disabled="disabled" selected="">Select your type of business</option>
+                                <option>Cuisine</option>
+                                <option>Fashion</option>
+                              </select>
+                            </div> 
+                        </div>
+                    </div>
+                   <!--  <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="form-group">
+                                <label for="">Username</label>
+                                <input type="text" class="form-control" id="username" placeholder="Username" required>
                             </div>
+                        </div>
+                    </div> -->
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <label for="">Firstname</label>
+                                <input type="text" class="form-control" id="firstname" placeholder="First Name" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <label for="">Lastname</label>
+                                <input type="text" class="form-control" id="lastname" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                     <div class="col-lg-12 col-md-12">
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="text" class="form-control" id="email" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                    </div>
+                  <!--   <div class="row">
+                     <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <label for="">Mobile number</label>
+                                <input type="text" class="form-control" id="phone" placeholder="Phone number" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <label for="">WhatsApp number</label>
+                                <input type="text" class="form-control" id="whatsapp" placeholder="Whatsapp Number">
+                            </div>
+                        </div>
+                    </div> -->
+                     <div class="row">
+                     <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <label for="">Password</label>
+                                <input type="text" class="form-control" id="password" placeholder="Password" required>
+                                <span class="error">Password must be at least 8 characters</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <label for="">Confirm Password</label>
+                                <input type="text" class="form-control" id="confpassword" placeholder="Confirm Password" required>
+                            </div>
+                        </div>
+                    </div>
 
-    <div class="table-responsive m-3">
-         <table id="orderTable" class="table table-bordered table-hover table-sm" data-order='[[ 1, "asc" ]]' data-page-length='100'>
-      <thead class="thead-light">
-        <tr>
-          <th class="p-3">#</th>
-          <th class="p-3">Order</th>
-          <th class="p-3">Date</th>
-          <th class="p-3">Status</th>
-          <th class="p-3">Total</th>
-          <th class="p-3">Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="p-3">1</td>
-          <td class="p-3">#3455</td>
-          <td class="p-3">March 18, 2020</td>
-          <td class="text-success p-3">Paid</td>
-          <td class="p-3">₦41,150.00 for 2 items</td>
-          <td  class="p-3">
-            <a href="my-orders-details.html" class="btn btn-warning btn-sm btn-block">View</a>
-        </td>
-        </tr>
-         <tr>
-          <td class="p-3">2</td>        
-          <td class="p-3">#3455</td>
-          <td class="p-3">March 18, 2020</td>
-           <td class="text-danger p-3">Failed</td>
-          <td class="p-3">₦41,150.00 for 2 items</td>
-            <td  class="p-3">
-            <a href="my-orders-details.html" class="btn btn-warning btn-sm btn-block">View</a>
-        </td>
-        </tr>
-         <tr>
-          <td class="p-3">3</td>        
-          <td class="p-3">#3455</td>
-          <td class="p-3">March 18, 2020</td>
-           <td class="text-warning p-3">Layaway</td>
-          <td class="p-3">₦41,150.00 for 2 items</td>
-            <td  class="p-3">
-            <a href="my-orders-details.html" class="btn btn-warning btn-sm btn-block">View</a>
-        </td>
-        </tr>
-      </tbody>
-    </table>
-</div>
-
-
-   <!-- Modal: My Orders View -->
-  <div class="modal" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content"> 
-      <!-- Modal Header -->
-      <div class="p-2">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>       
-        <!-- Modal body -->
-        <div class="modal-body">
-       <p> Order #4355 was placed on March 18, 2020 and is currently <span class="text-danger">Failed.</span> </p>
-       <hr/>
-        <h5>Order details</h5>
-        <br/>
-          <table class="table table-bordered table-hover table-sm">
-      <thead class="thead-light">
-        <tr>
-          <th>Product</th>
-          <th>Total</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="font-weight-bold">Lingerie shoes x 2</td>
-          <td>₦40,000.00</td>
-        </tr>
-         <tr>
-          <td class="font-weight-bold">Denim Bags x 3</td>
-          <td>N80,000</td>
-        </tr>
-         <tr>
-          <td class="font-weight-bold">Total</td>
-          <td>N14,880.00</td>
-        </tr>
-         
-      </tbody>
-    </table>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-       
-  </div>
-  <!-- Order End -->
-</article>
+                           <!-- Business informaiton div start -->
+                <!--     <div id="business-information">
+                    <div class="text-capitalize">
+                        <h6>Business Information</h6>
+                    </div>
+                    <hr/>
+                    <div class="row">
+                    	<div class="col-lg-12 col-md-12">
+                         <div class="form-group">
+							  <select class="form-control" id="business-type">
+							  	<option disabled="disabled" selected="">Select business type</option>
+							    <option>Cuisine</option>
+							    <option>Fashion</option>
+							  </select>
+							</div> 
+						</div>
+                    </div>
+                     <div class="row">
+                    	 <div class="col-lg-12 col-md-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="business-name" placeholder="Business Name (What is the name of your business?)" required>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="row">
+                    </div>
+                      <div class="row">
+                    	 <div class="col-lg-12 col-md-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="business-address" placeholder="Business Address" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                       <div class="form-group">
+                        <textarea class="form-control" rows="2" placeholder="Describe your business" id="business-description"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                     <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="business-email" placeholder="Business Email" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="business-phone" placeholder="Business Phone" required>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="row">
+                     <div class="col-lg-4 col-md-4">
+                            <div class="form-group">
+							  <select class="form-control" id="state">
+							  	<option disabled="disabled" selected="">State</option>
+							    <option>Lagos</option>
+							  </select>
+							</div> 
+                        </div>
+                         <div class="col-lg-4 col-md-4">
+                            <div class="form-group">
+							  <select class="form-control" id="city">
+							  	<option disabled="disabled" selected="">City</option>
+							    <option>Ikorodu</option>
+							    <option>Ajah</option>
+							  </select>
+							</div> 
+                        </div>
+                         <div class="col-lg-4 col-md-4">
+                           <div class="form-group">
+							  <select class="form-control" id="area">
+							  	<option disabled="disabled" selected="">Area</option>
+							    <option>Alimosho</option>
+							    <option>Isheri</option>
+							  </select>
+							</div> 
+                        </div>
+                    </div>
+                </div> --> <!-- Business informaiton div end -->
+                    <div class="row">
+                         <div class="col-lg-12 col-md-12">
+                        <div class="form-group">
+                                 <br/>
+                         <div id="terms-conditions">
+                            <div class="custom-control custom-check">
+                              <input type="checkbox" id="termsConditons" name="termsConditons" class="custom-control-input">
+                              <label class="custom-control-label" for="termsConditons">I agree to the Terms & Conditions</label>
+                            </div>
+                        </div>
+                             </div>
+                             </div>
+                        </div>
+                        <br/>
+                    <button type="submit" class="btn btn-info btn-start">Sign up</button>
+                </form>
+            </div>
+        </article>
     </main>
 
-     <br/><br/>
-
     <footer class="footer">
-        <br/>
+        <div class="getintouch">
+            <h3>Get in Touch</h3>
+            <p><span>Send us a message</span><br> Or you can call us on +234555344444</p>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-md-8 col-sm-12">
@@ -369,7 +471,7 @@
                                 <h6>Account</h6>
                                 <div>
                                     <p><a href="">Advertise on Jollof.com</a></p>
-                                    <p><a href="">Add Your Business</a></p>
+                                    <p><a href="">Sell on Jollof</a></p>
                                     <p><a href="">Merchant Login</a></p>
                                 </div>
                             </div>
@@ -391,30 +493,31 @@
                 </div>  
             </div>
             <div class="mt-10">
-                <p class="pull-left">2019 C All Right Reserved, Jollof.com</p>
+                <p class="pull-left">2019 &copy; All Right Reserved, Jollof.com</p>
                 <p class="text-right"><a href="">Refund & Cancellation Policy</a> | <a href="">Terms & Conditions</a></p>
             </div>
         </div>
     </footer>
 
-
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-     <!-- datatable js -->
-    <script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            //Hide business type onload
+          $('#business-type').hide();
 
-    <script>
-        $(document).ready( function () {
+          //show business type on merchant radio button click
+           $("#merchant").click(function(){
+             $('#business-type').show(500);
+         });
 
-    // datatable
-    $('#orderTable').DataTable({
-         responsive: true
-    });
+            //hide business type on customer radio button click 
+             $("#customer").click(function(){
+             $('#business-type').hide(500);
+         });
 
-});
-
-    </script>
-
+      });
+        </script>
 </body>
 </html>

@@ -14,9 +14,6 @@
     <link href="css/hover-min.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
     <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
-
-    <!-- datatable css -->
-        <link rel="stylesheet" href="//cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
     <style>
         @media screen and (max-width: 768px) {
             .logo-wrapper .navbar-collapse {
@@ -235,56 +232,67 @@
                     <div class="row">
                      <br/>
                             <div class="col-12">
-                                <h6 class="text-uppercase">My Orders</h6>
+                                <h6 class="">Order #4593 was placed on March 31, 2020 and is currently Processing.</h6>
                             </div>
 
     <div class="table-responsive m-3">
-         <table id="orderTable" class="table table-bordered table-hover table-sm" data-order='[[ 1, "asc" ]]' data-page-length='100'>
+        <div>
+           <h5>Order details</h5>
+              </div>
+         <table class="table table-bordered table-hover table-sm" style="width:70%;">
       <thead class="thead-light">
         <tr>
-          <th class="p-3">#</th>
-          <th class="p-3">Order</th>
-          <th class="p-3">Date</th>
-          <th class="p-3">Status</th>
-          <th class="p-3">Total</th>
-          <th class="p-3">Actions</th>
+          <th class="p-3">Product</th>
+          <th  class="p-3">Total</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td class="p-3">1</td>
-          <td class="p-3">#3455</td>
-          <td class="p-3">March 18, 2020</td>
-          <td class="text-success p-3">Paid</td>
-          <td class="p-3">₦41,150.00 for 2 items</td>
-          <td  class="p-3">
-            <a href="my-orders-details.html" class="btn btn-warning btn-sm btn-block">View</a>
-        </td>
+         <tr>
+          <td  class="p-3">Secret Stone × 3</td>
+          <td  class="p-3">₦60,000.00</td>
+        </tr>
+          <tr>
+          <td  class="p-3">Subtotal:</td>
+          <td  class="p-3">₦60,000.00</td>
+        </tr>
+          <tr>
+          <td class="p-3">Shipping</td>
+          <td class="p-3">₦60,000.00</td>
         </tr>
          <tr>
-          <td class="p-3">2</td>        
-          <td class="p-3">#3455</td>
-          <td class="p-3">March 18, 2020</td>
-           <td class="text-danger p-3">Failed</td>
-          <td class="p-3">₦41,150.00 for 2 items</td>
-            <td  class="p-3">
-            <a href="my-orders-details.html" class="btn btn-warning btn-sm btn-block">View</a>
-        </td>
+          <td class="p-3">Payment method:</td>
+          <td class="p-3">Debit/Credit Cards</td>
         </tr>
          <tr>
-          <td class="p-3">3</td>        
-          <td class="p-3">#3455</td>
-          <td class="p-3">March 18, 2020</td>
-           <td class="text-warning p-3">Layaway</td>
-          <td class="p-3">₦41,150.00 for 2 items</td>
-            <td  class="p-3">
-            <a href="my-orders-details.html" class="btn btn-warning btn-sm btn-block">View</a>
-        </td>
+          <td class="p-3">Total:</td>
+          <td class="p-3">₦61,300.00</td>
         </tr>
       </tbody>
     </table>
 </div>
+ <div class="table-responsive m-3">
+         <table class="table table-bordered table-hover table-sm" style="width:70%;">
+      <thead class="thead-light">
+        <tr>
+          <th class="p-3">Delivery Address</th>
+        </tr>
+      </thead>
+      <tbody>
+         <tr>
+          <td class="p-3" colspan="2">
+              Beyonce Knowles <br/>
+44 Gbenro treet, Ggbagada, Lagos
+Ado
+Lagos <br/>
 
+08044477759 <br/>
+
+clasberymedia@gmail.com
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
 
    <!-- Modal: My Orders View -->
   <div class="modal" id="myModal">
@@ -381,10 +389,10 @@
                         <h5>Mobile App</h5>
                         <div class="d-flex">
                             <div class="p-2">
-                                <a href=""><img src="images/google-play.png" class="img-fluid" alt="googleplay icon"></a>
+                                <a href="my-orders-details.html"><img src="images/google-play.png" class="img-fluid" alt="googleplay icon"></a>
                             </div>
                             <div class="p-2">
-                                <a href=""><img src="images/app-store.png" class="img-fluid" alt="appstore icon"></a>
+                                <a href="my-orders-details.html"><img src="images/app-store.png" class="img-fluid" alt="appstore icon"></a>
                             </div>
                         </div>
                     </div>
@@ -401,20 +409,5 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-     <!-- datatable js -->
-    <script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-
-    <script>
-        $(document).ready( function () {
-
-    // datatable
-    $('#orderTable').DataTable({
-         responsive: true
-    });
-
-});
-
-    </script>
-
 </body>
 </html>
